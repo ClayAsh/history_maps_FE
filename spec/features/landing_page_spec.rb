@@ -5,6 +5,10 @@ RSpec.describe "Landing page" do
     visit '/'
 
     expect(page).to have_link("Register/Sign In")
+
+    click_link "Register/Sign In"
+
+    expect(current_path).to be(users_create_path)
   end
 
   it "has search field to find by address" do
