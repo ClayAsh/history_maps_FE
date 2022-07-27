@@ -1,0 +1,9 @@
+<h1>Yo</h1>
+
+<%= link_to "Register/Sign In", users_path %>
+
+<%= form_with url: search_index_path, method: :get, local: true do |f| %>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <%= f.submit "See History Near Me" %>
+<% end %>
