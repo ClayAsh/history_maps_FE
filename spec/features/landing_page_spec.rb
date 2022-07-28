@@ -21,4 +21,18 @@ RSpec.describe "Landing page" do
 
     expect(page).to have_field("Address")
   end
+
+  describe 'search location' do
+    before :each do
+      @location = '1623 market street, denver co'
+    end
+
+    it 'can search for a location' do
+      visit '/'
+      fill_in :address, with: @location
+      click_on "See History Near Me"
+
+      expect(current_path).to eq(buildings_path)
+    end
+  end
 end
