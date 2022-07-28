@@ -1,6 +1,6 @@
 <h1>Yo</h1>
 
-<%= link_to "Register/Sign In", url: '/auth/google_oauth2/callback', method: :get %>
+<%= link_to "Register/Sign In", '/auth/google_oauth2', method: :get %>
 
 <%= form_with url: search_index_path, method: :get, local: true do |f| %>
   <%= f.label :address %>
