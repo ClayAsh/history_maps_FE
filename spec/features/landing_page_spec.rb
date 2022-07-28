@@ -13,6 +13,7 @@ RSpec.describe "Landing page" do
     click_link "Register/Sign In"
 
     expect(current_path).to eq('/')
+
   end
 
   it "has search field to find by address" do
