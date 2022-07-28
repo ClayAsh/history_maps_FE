@@ -65,8 +65,28 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 end
 Shoulda::Matchers.configure do |config|
-    config.integrate do |with|
-      with.test_framework :rspec
-      with.library :rails
-    end
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
   end
+end
+
+OmniAuth.config.test_mode = true
+OmniAuth.config.silence_get_warning = true
+OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new({
+  provider: "google_oauth2",
+  uid: "12345678910",
+  info: {
+    name: "Matt Deming",
+   email: "vballmatt44@gmail.com",
+ },
+ credentials: {
+   token:
+    "abcdefg12355",
+   refresh_token:
+    "abcdefg12345",
+   expires_at: DateTime.now,
+    }
+})
+#
+# Rails.application.env_config['omniauth.auth'] = OmniAuth.config.mock_auth[:google_oauth2]
