@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   # resources :users, only: [:create]
 
   # get '/buildings/index', to: 'buildings#index'
-  resources :buildings, only: [:index]
+  resources :buildings, only: [:index, :show]
 end
