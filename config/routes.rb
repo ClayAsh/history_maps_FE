@@ -6,5 +6,6 @@ Rails.application.routes.draw do
 
   # resources :users, only: [:create]
 
-  resources :search, only: [:index]
+  # get '/buildings/index', to: 'buildings#index'
+  resources :buildings, only: [:index, :show]
 end
