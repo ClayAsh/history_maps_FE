@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe BuildingFacade do
+RSpec.describe BuildingFacade, :vcr do
   let!(:find_location) { BuildingFacade.find_building("1623 Market Street, Denver CO")}
 
-  it 'creates location from search' do
+  it 'creates location from search', :vcr do
     expect(find_location).to eq({
       "street": "1623 Market St",
       "county": "Denver",

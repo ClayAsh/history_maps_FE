@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/search?location=1623%20Market%20St,%20Denver%20CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 29 Jul 2022 01:07:07 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"e217f56e85215fc40684a4054ddb6b86"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 13982391-5994-4a06-9b9a-213f88731368
+      X-Runtime:
+      - '0.338074'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"street":"1623 Market St","county":"Denver","city":"Denver","state":"CO","zipcode":"80202"}'
+  recorded_at: Fri, 29 Jul 2022 01:07:07 GMT
+recorded_with: VCR 6.1.0

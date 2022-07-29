@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Building do
-  it 'exists with attributes' do
+  it 'exists with attributes', :vcr do
     data = {
       street: "1623 Market St",
       county: "Denver",
