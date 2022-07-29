@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    session[:user_id] = params[:user_id]
+    session[:user_id] = params[:id]
     redirect_to root_path
   end
 end

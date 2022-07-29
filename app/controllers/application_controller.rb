@@ -2,6 +2,6 @@ class ApplicationController < ActionController::Base
   helper_method :current_user 
 
   def current_user 
-    UserFacade.user(session[:user_id])
+    UserFacade.get_user(session[:user_id])
   end
 end

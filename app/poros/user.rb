@@ -5,6 +5,6 @@ class User
   def initialize(attributes)
     @username = attributes[:attributes][:username]
     @email = attributes[:attributes][:email]
-    @id = attributes[:id]
+    @id = attributes[:id].to_i
   end
 end

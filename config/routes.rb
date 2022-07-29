@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get '/auth/google_oauth2/callback', to: 'users#create'
 
-  # resources :users, only: [:create]
+  delete '/logout', to: 'sessions#destroy'
 
   # get '/buildings/index', to: 'buildings#index'
   resources :buildings, only: [:index, :show]
