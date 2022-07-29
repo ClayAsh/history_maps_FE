@@ -1,9 +1,13 @@
-<h1>Yo</h1>
+<div class="container text-center" >
+  <h1>Welcome To History Maps</h1>
+</div>
 
 <%= link_to "Register/Sign In", '/auth/google_oauth2', method: :get %>
 
-<%= form_with url: search_index_path, method: :get, local: true do |f| %>
+<search class="h-100 d-flex align-items-center justify-content-center">
+<%= form_with url: buildings_path, method: :get, local: true do |f| %>
   <%= f.label :address %>
   <%= f.text_field :address %>
   <%= f.submit "See History Near Me" %>
-<% end %>
+  <% end %>
+</search>
