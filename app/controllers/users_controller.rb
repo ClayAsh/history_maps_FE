@@ -6,7 +6,9 @@ class UsersController < ApplicationController
   def create
     auth = request.env["omniauth.auth"]
     session[:access_token] = auth[:credentials][:token]
-    # user = UserFacade.create_user(auth_hash[:info])
+  
+  # UserFacade.create_user(auth[:info])
+
     redirect_to '/'
   end
 end
