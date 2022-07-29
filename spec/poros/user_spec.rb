@@ -5,7 +5,6 @@ RSpec.describe User do
     info = {username: "Bob", email: "bob@email.com"}
     user = UserFacade.find_create_user(info)
 
-    # expect(user.id).to eq()
     expect(user.username).to eq("Bob")
     expect(user.email).to eq("bob@email.com")
   end

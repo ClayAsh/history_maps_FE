@@ -19,6 +19,6 @@ RSpec.describe UserFacade do
   it 'creates poro for one user', :vcr do 
     user = UserFacade.get_user(2)
 
-    expect(user.id).to eq("2")
+    expect(user.id).to eq(2)
   end
 end

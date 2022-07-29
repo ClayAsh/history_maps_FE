@@ -1,45 +1,43 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: https://history-maps-be.herokuapp.com/api/v1/search?location=1623%20market%20street,%20denver%20co
+    method: post
+    uri: https://history-maps-be.herokuapp.com/api/v1/users/register
     body:
-      encoding: US-ASCII
-      string: ''
+      encoding: UTF-8
+      string: '{"email":"vballmatt44@gmail.com","username":null}'
     headers:
       User-Agent:
       - Faraday v2.3.0
+      Content-Type:
+      - application/json
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 422
+      message: Unprocessable Entity
     headers:
       Server:
       - Cowboy
       Date:
-      - Fri, 29 Jul 2022 01:07:04 GMT
+      - Fri, 29 Jul 2022 16:51:23 GMT
       Connection:
       - keep-alive
       Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"e217f56e85215fc40684a4054ddb6b86"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      - text/html; charset=UTF-8
       X-Request-Id:
-      - 177c53d8-e2a0-4bb4-9b4d-29c5896a3065
+      - 6c21d098-1f75-4cee-85b6-fb9c16cb61d5
       X-Runtime:
-      - '0.313394'
-      Transfer-Encoding:
-      - chunked
+      - '0.012414'
+      Content-Length:
+      - '0'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"street":"1623 Market St","county":"Denver","city":"Denver","state":"CO","zipcode":"80202"}'
-  recorded_at: Fri, 29 Jul 2022 01:07:05 GMT
+      string: ''
+  recorded_at: Fri, 29 Jul 2022 16:51:24 GMT
 recorded_with: VCR 6.1.0

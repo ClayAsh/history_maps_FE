@@ -29,9 +29,9 @@ http_interactions:
       Content-Type:
       - text/html; charset=UTF-8
       X-Request-Id:
-      - 5ab1a415-0ef1-4bdc-8061-c4cc67ef0015
+      - ed1aa52a-098b-4240-80be-47f053175189
       X-Runtime:
-      - '0.011613'
+      - '0.023985'
       Content-Length:
       - '0'
       Via:
@@ -39,5 +39,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Fri, 29 Jul 2022 16:51:24 GMT
+  recorded_at: Fri, 29 Jul 2022 16:51:23 GMT
 recorded_with: VCR 6.1.0

@@ -1,11 +1,16 @@
 require 'rails_helper'
 
-RSpec.describe "Landing page" do
-  before do
-    Rails.application.env_config['omniauth.auth'] = OmniAuth.config.mock_auth[:google_oauth2]
+RSpec.describe "Landing page", :vcr do
+  before :each do
+    @user = (Rails.application.env_config['omniauth.auth'] = OmniAuth.config.mock_auth[:google_oauth2])
+    # require 'pry'; binding.pry
+    data = @user[:info]
+    # require 'pry'; binding.pry
+    UserFacade.find_create_user(data)
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
   end
 
-  xit "has a link to create an account" do
+  it "has a link to create an account", :vcr do
     visit '/'
 
     expect(page).to have_link("Register/Sign In")
@@ -13,10 +18,9 @@ RSpec.describe "Landing page" do
     click_link "Register/Sign In"
 
     expect(current_path).to eq('/')
-
   end
 
-  it "has search field to find by address" do
+  it "has search field to find by address", :vcr do
     visit '/'
 
     expect(page).to have_field("Address")
