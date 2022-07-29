@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://history-maps-be.herokuapp.com/api/v1/users/register
+    body:
+      encoding: UTF-8
+      string: '{"email":"bob@email.com","username":"Bob"}'
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 29 Jul 2022 01:07:03 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8b3d8863537fb7624b75afc0347c347c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 27878483-76b7-4b6b-8b57-cef35baf6685
+      X-Runtime:
+      - '0.003598'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"4","type":"user","attributes":{"email":"bob@email.com","username":"Bob"}}}'
+  recorded_at: Fri, 29 Jul 2022 01:07:04 GMT
+recorded_with: VCR 6.1.0

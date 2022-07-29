@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 29 Jul 2022 01:07:06 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4dcaa668fa6abbcd9178fcb45c9b5b88"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b10c3639-022a-49c1-a2e4-cf2cc31af5db
+      X-Runtime:
+      - '0.004037'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"user","attributes":{"email":"smallgirly111@gmail.com1","username":"small
+        girl111"}},{"id":"2","type":"user","attributes":{"email":"someone@email.com","username":"someone"}},{"id":"3","type":"user","attributes":{"email":"smallgirly111@gmail.com11","username":"small
+        girl11"}},{"id":"4","type":"user","attributes":{"email":"bob@email.com","username":"Bob"}}]}'
+  recorded_at: Fri, 29 Jul 2022 01:07:07 GMT
+recorded_with: VCR 6.1.0
