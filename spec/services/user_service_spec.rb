@@ -6,7 +6,6 @@ RSpec.describe "User service" do
 
     expect(users).to be_a(Hash)
     expect(users).to include(:data)
-    # expect(users[:data].length).to eq(3)
   end
 
   it 'establishes connection to create new user', :vcr do 
@@ -15,7 +14,10 @@ RSpec.describe "User service" do
 
     expect(new_user[:data]).to be_a(Hash)
     expect(new_user[:data][:attributes]).to include(:username)
+    expect(new_user[:data][:attributes][:username]).to eq('someone')
+
     expect(new_user[:data][:attributes]).to include(:email)
+    expect(new_user[:data][:attributes][:email]).to eq('someone@email.com')
   end
 
   it 'establishes connection to return one user', :vcr do 

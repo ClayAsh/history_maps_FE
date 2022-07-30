@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe "Landing page" do
-  # before :each do
-  #   Rails.application.env_config['omniauth.auth'] = OmniAuth.config.mock_auth[:google_oauth2]
-  # end
+  before :each do
+    Rails.application.env_config['omniauth.auth'] = OmniAuth.config.mock_auth[:google_oauth2]
+  end
 
   it "has a link to create an account", :vcr do
     visit '/'
