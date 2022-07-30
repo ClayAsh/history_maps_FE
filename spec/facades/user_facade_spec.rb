@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe UserFacade do 
   it 'creates poro for create user', :vcr do 
-    info = {username: "Bob", email: "bob@email.com"}
+    info = {name: "Bob", email: "bob@email.com"}
     user = UserFacade.find_create_user(info)
 
     expect(user).to be_a(User)

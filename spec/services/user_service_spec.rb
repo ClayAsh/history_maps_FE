@@ -9,7 +9,7 @@ RSpec.describe "User service" do
   end
 
   it 'establishes connection to create new user', :vcr do 
-    user_data = {email: 'someone@email.com', username: 'someone'}
+    user_data = {email: 'someone@email.com', name: 'someone'}
     new_user = UserService.create_user(user_data)
 
     expect(new_user[:data]).to be_a(Hash)

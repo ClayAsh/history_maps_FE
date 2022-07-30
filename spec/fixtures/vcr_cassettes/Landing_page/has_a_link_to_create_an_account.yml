@@ -5,7 +5,7 @@ http_interactions:
     uri: https://history-maps-be.herokuapp.com/api/v1/users/register
     body:
       encoding: UTF-8
-      string: '{"email":"vballmatt44@gmail.com","username":null}'
+      string: '{"email":"john.doe@example.com","username":"John Doe"}'
     headers:
       User-Agent:
       - Faraday v2.3.0
@@ -17,27 +17,32 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 422
-      message: Unprocessable Entity
+      code: 201
+      message: Created
     headers:
       Server:
       - Cowboy
       Date:
-      - Fri, 29 Jul 2022 23:07:15 GMT
+      - Sat, 30 Jul 2022 18:04:58 GMT
       Connection:
       - keep-alive
       Content-Type:
-      - text/html; charset=UTF-8
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ab2589cd1611667ac91a0bb1c7c8a8b4"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 96836ba0-dd35-42d8-847a-e1f8fd4dcd67
+      - ac2f8b62-c827-4824-aa3f-dc36a1b95b85
       X-Runtime:
-      - '0.013184'
-      Content-Length:
-      - '0'
+      - '0.003511'
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: ''
-  recorded_at: Fri, 29 Jul 2022 23:07:16 GMT
+      string: '{"data":{"id":"5","type":"user","attributes":{"email":"john.doe@example.com","username":"John
+        Doe"}}}'
+  recorded_at: Sat, 30 Jul 2022 18:04:59 GMT
 recorded_with: VCR 6.1.0
