@@ -1,8 +1,10 @@
-<div class="container text-center" >
+<div class="container text-center">
   <h1>Welcome To History Maps</h1>
 </div>
 
-<%= link_to "Register/Sign In", '/auth/google_oauth2', method: :get %>
+<div>
+  <%= link_to "Register/Sign In", '/auth/google_oauth2', method: :get %>
+</div>
 
 <search class="h-100 d-flex align-items-center justify-content-center">
 <%= form_with url: buildings_path, method: :get, local: true do |f| %>
