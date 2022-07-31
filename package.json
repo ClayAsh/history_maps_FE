@@ -1,7 +1,0 @@
-{
-  "name": "history_maps_FE",
-  "private": true,
-  "dependencies": {
-    "bootstrap-icons": "^1.9.1"
-  }
-}
