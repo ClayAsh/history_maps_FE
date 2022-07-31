@@ -3,7 +3,7 @@
 <% if !session[:user_id]%>
   <%= link_to "Register/Sign In", '/auth/google_oauth2', method: :get %>
 <%else%>
-  <%= link_to "Sign Out", '/logout', method: :delete %>
+  <%= link_to "Sign Out", '/logout', method: :get %>
 <%end%>
 
 
