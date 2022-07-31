@@ -14,6 +14,7 @@ RSpec.describe "Landing page" do
 
     expect(current_path).to eq('/')
     expect(page).to have_content("Sign Out")
+    expect(page).to have_content("Favorites")
   end
 
   describe 'search location' do
