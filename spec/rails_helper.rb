@@ -71,7 +71,7 @@ Shoulda::Matchers.configure do |config|
   end
 end
 
-OmniAuth.config.test_mode = false
+OmniAuth.config.test_mode = true
 OmniAuth.config.silence_get_warning = true
 OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new(
 {
