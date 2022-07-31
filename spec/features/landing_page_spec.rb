@@ -8,12 +8,12 @@ RSpec.describe "Landing page" do
   it "has a link to create an account", :vcr do
     visit '/'
 
-    expect(page).to_not have_content("Sign Out")
+    expect(page).to_not have_link("Sign Out")
 
     click_link "Register/Sign In"
 
     expect(current_path).to eq('/')
-    expect(page).to have_content("Sign Out")
+    expect(page).to have_link("Sign Out")
   end
 
   describe 'search location' do
