@@ -50,5 +50,9 @@ RSpec.describe "Landing page" do
         # expect(page).to have_button("See This Property")
       end
     end
+
+    it 'can show results from LoC api' do
+      
+    end
   end
 end
