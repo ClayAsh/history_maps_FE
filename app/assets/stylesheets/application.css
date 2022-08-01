@@ -43,9 +43,8 @@
   background-color: white;
   list-style: none;
 }
-.nav_left a{
-  underline: none;
-  list-style: none;
+a {
+  text-decoration: none;
 }
 
 h1 {
