@@ -14,6 +14,13 @@ RSpec.describe "Landing page" do
 
     expect(current_path).to eq('/')
     expect(page).to have_link("Sign Out")
+    expect(page).to have_link("favorites")
+  end
+
+  it "has link to maps" do
+    visit '/'
+
+    expect(page).to have_link("Map Of Landmarks Near Me")
   end
 
   describe 'search location' do
