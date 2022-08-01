@@ -24,7 +24,7 @@ RSpec.describe "Landing page" do
 
   describe 'search location' do
     before :each do
-      @location = '1623 market street, denver co'
+      @location = '80202'
     end
 
     it 'can search for a location', :vcr do
@@ -52,7 +52,7 @@ RSpec.describe "Landing page" do
     end
 
     it 'can show results from LoC api' do
-      
+
     end
   end
 end

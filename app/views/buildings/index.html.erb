@@ -6,6 +6,8 @@
     <p>City: <%= @building[:city] %></p>
     <p>State: <%= @building[:state] %></p>
     <p>Zipcode: <%= @building[:zipcode] %></p>
-    <%#= button_to "See This Property", building_pathI’m   %>
+    <%#= button_to "See This Property", building_path   %>
+    <% binding.pry %>
+    <%= @properties %>
   <% end %>
 </div>
