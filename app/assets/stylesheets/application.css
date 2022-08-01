@@ -34,6 +34,20 @@
   color: black;
 }
 
+.favorites{
+  margin: 5px;
+  color: black;
+}
+
+.nav_left{
+  background-color: white;
+  list-style: none;
+}
+.nav_left a{
+  underline: none;
+  list-style: none;
+}
+
 h1 {
   text-align: center;
 }
