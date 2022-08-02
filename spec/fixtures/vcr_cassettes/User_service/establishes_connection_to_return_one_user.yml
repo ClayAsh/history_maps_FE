@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sat, 30 Jul 2022 18:05:01 GMT
+      - Tue, 02 Aug 2022 14:10:50 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2ad8265b-ddee-484a-bece-f34291c45d22
+      - 33578c70-0c7c-4bc7-9e17-da08377c79f9
       X-Runtime:
-      - '0.003921'
+      - '0.002868'
       Transfer-Encoding:
       - chunked
       Via:
@@ -42,5 +42,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"3","type":"user","attributes":{"email":"smallgirly111@gmail.com11","username":"small
         girl11"}}}'
-  recorded_at: Sat, 30 Jul 2022 18:05:01 GMT
+  recorded_at: Tue, 02 Aug 2022 14:10:51 GMT
 recorded_with: VCR 6.1.0

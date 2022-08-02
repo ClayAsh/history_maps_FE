@@ -21,19 +21,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 02 Aug 2022 14:10:49 GMT
+      - Tue, 02 Aug 2022 14:15:15 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8c221a2c5e2ee13d6651290b44c3d59b"
+      - W/"90e209b76a9f10efb2d3870c9405d74c"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c549d26d-a90b-4ac0-a774-8996f1626201
+      - bc38ab8a-1826-42a6-a675-a90af96264c7
       X-Runtime:
-      - '0.004079'
+      - '0.003787'
       Transfer-Encoding:
       - chunked
       Via:
@@ -53,6 +53,8 @@ http_interactions:
         Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg.url","details":"some
         details"}},{"id":"7","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
         Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg.url","details":"some
+        details"}},{"id":"8","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
+        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
         details"}}]}'
-  recorded_at: Tue, 02 Aug 2022 14:10:49 GMT
+  recorded_at: Tue, 02 Aug 2022 14:15:16 GMT
 recorded_with: VCR 6.1.0
