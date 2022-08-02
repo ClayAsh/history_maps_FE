@@ -1,6 +1,21 @@
+  
+<img width="500" alt="History Maps" src="https://user-images.githubusercontent.com/99059063/182459512-81968120-d631-4729-86ab-ca15a892b804.jpeg"></br>
+
+
 <%@favorites.each do |f|%>
-  <%=f.title%></br>
-  <%=f.photo%></br>
-  <%=f.other_titles%></br>
-  <%=f.details%></br>
+  <% if f.user_id == @session_user_id.to_i %>
+    <%=f.title%></br>
+    <% if !f.photo.nil? && f.photo.include?("https") %>
+      <%= image_tag(f.photo) %></br>
+    <%end%>
+    <%if !f.other_titles.nil?%>
+      <%=f.other_titles%></br>
+    <%end%>
+    <%if !f.details.nil?%>
+      <%=f.details%></br>
+    <%end%>
+    <%if !f.pdf.nil?%>
+      <%=link_to "A PDF is Available!", f.pdf %></br>
+    <%end%>
+  <%end%>
 <%end%>
