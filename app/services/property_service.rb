@@ -7,4 +7,10 @@ class PropertyService < BaseService
     end
     get_json(response)
   end
+
+  def self.single_location_result(id)
+    response = conn.get("/api/v1/results/#{id}")
+    get_json(response)
+
+  end
 end

@@ -11,6 +11,6 @@ RSpec.describe PropertyFacade, :vcr do
   let!(:find_property) { PropertyFacade.find_property("80109") }
 
   it 'finds the results for a location search', :vcr do
-    expect(find_property).to be_a(Array)
+    expect(find_property).to be_a(Hash)
   end
 end

@@ -2,12 +2,20 @@ class BuildingsController < ApplicationController
 
   def index
     @building = BuildingFacade.find_building(params[:address])
-    binding.pry
     @properties = PropertyFacade.find_property(@building)
-    # @images = ImagesFacade.find_image(@properties[])
+    @images = []
+    item_ids = []
+    @properties.each do |property|
+      item_ids << property[:id]
+    end
+    item_ids.each do |item|
+      @images << PropertyFacade.find_single_location(item[0..5])
+    end
   end
 
   def show;
-    binding.pry
+    match_results(loc)
+    @property = PropertyFacade.find_single_location(params[:id])
+
   end
 end

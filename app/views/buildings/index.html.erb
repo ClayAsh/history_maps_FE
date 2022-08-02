@@ -1,13 +1,9 @@
-
+<%= @images %>
 <div id="property">
   <% if !@building.nil? %>
-    <p>Street address: <%= @building[:street] %></p>
-    <p>County: <%= @building[:county] %></p>
-    <p>City: <%= @building[:city] %></p>
-    <p>State: <%= @building[:state] %></p>
-    <p>Zipcode: <%= @building[:zipcode] %></p>
-    <%#= button_to "See This Property", building_path   %>
-    <% binding.pry %>
-    <%= @properties %>
+    <% @images.each do |image| %>
+      <%  %>
+        <%= image_tag "#{image[:photo_url]}" %>
+    <% end %>
   <% end %>
 </div>
