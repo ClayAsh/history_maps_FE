@@ -6,6 +6,7 @@ RSpec.describe FavoriteService do
     favorites = FavoriteService.all_favorites(user_id)
 
     expect(favorites).to be_a(Hash)
+    expect(favorites[:data][0]).to include(:id)
   end
 
   it 'establishes connection to create new favorite', :vcr do 
@@ -16,11 +17,12 @@ RSpec.describe FavoriteService do
              location_id: "pk id",
              other_titles: "1225",
              details: "some details",
-             pdf: nil
+             pdf: "pdf"
            }
    
     new_favorite = FavoriteService.create_favorite(user_id, data)
 
     expect(new_favorite).to be_a(Hash)
+    expect(new_favorite[:data]).to include(:id)
   end
 end

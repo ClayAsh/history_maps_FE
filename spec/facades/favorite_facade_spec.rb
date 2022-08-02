@@ -1,9 +1,9 @@
-require 'rail_helper'
+require 'rails_helper'
 
 RSpec.describe FavoriteFacade do 
   it 'creates poro for all favorites', :vcr do 
     user_id = 3 
-    favorites = FavoriteFacade.all_favorites(user_id)
+    favorites = FavoriteFacade.get_favorites(user_id)
 
     expect(favorites.first).to be_a(Favorite)
   end
@@ -16,10 +16,10 @@ RSpec.describe FavoriteFacade do
              location_id: "pk id",
              other_titles: "1225",
              details: "some details",
-             pdf: nil
+             pdf: "pdf"
            }
    
-    new_favorite = Favoritefacade.new_favorite(user_id, data)
+    new_favorite = FavoriteFacade.new_favorite(user_id, data)
 
     expect(new_favorite).to be_a(Favorite)
   end
