@@ -5,7 +5,8 @@ class Favorite
               :details,
               :id,
               :location_id,
-              :pdf
+              :pdf,
+              :user_id
   def initialize(attributes)
     require 'pry'; binding.pry
     @photo        = attributes[:medium_photo]
@@ -15,5 +16,6 @@ class Favorite
     @id           = attributes[:id]
     @location_id  = attributes[:location_id]
     @pdf          = attributes[:pdf]
+    @user_id      = attributes[:user_id]
   end
 end
