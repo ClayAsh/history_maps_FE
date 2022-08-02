@@ -13,7 +13,7 @@ RSpec.describe "Landing page" do
     expect(current_path).to eq('/')
 
     expect(page).to have_link("Sign Out")
-    expect(page).to have_link("favorites")
+    expect(page).to have_link("Favorites")
 
     click_link "Sign Out"
 
