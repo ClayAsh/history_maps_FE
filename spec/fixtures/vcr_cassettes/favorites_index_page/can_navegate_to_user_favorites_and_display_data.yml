@@ -1,0 +1,160 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://history-maps-be.herokuapp.com/api/v1/users/5/favorites
+    body:
+      encoding: UTF-8
+      string: '{"user_id":5,"title":"1623 Market Street Denver CO","photo":"jpeg.url","location_id":"pk
+        id","other_titles":"1225","details":"some details","pdf":"pdf"}'
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 17:27:10 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2a1425d1a55f5cae66843505dbd8a33e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f250cf92-bda1-4e18-b029-f82ab4f92a31
+      X-Runtime:
+      - '0.008087'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"12","type":"favorite","attributes":{"location_id":"pk
+        id","user_id":5,"title":"1623 Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg.url","details":"some
+        details"}}}'
+  recorded_at: Tue, 02 Aug 2022 17:27:11 GMT
+- request:
+    method: post
+    uri: https://history-maps-be.herokuapp.com/api/v1/users/register
+    body:
+      encoding: UTF-8
+      string: '{"email":"john.doe@example.com","username":"John Doe"}'
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 17:27:11 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ab2589cd1611667ac91a0bb1c7c8a8b4"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0d5961d1-d073-429d-b5e6-2d97c9d1eba1
+      X-Runtime:
+      - '0.003534'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5","type":"user","attributes":{"email":"john.doe@example.com","username":"John
+        Doe"}}}'
+  recorded_at: Tue, 02 Aug 2022 17:27:11 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/users/5/favorites
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 17:27:11 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2859ad25a4317478a0fa4af518cc24aa"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 87b8773b-86df-4cb7-bc11-1c3e102c54d2
+      X-Runtime:
+      - '0.004447'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"favorite","attributes":{"location_id":"pdkey","user_id":3,"title":"1237
+        tamarac denver co","other_titles":"more stuff","pdf":"pdf","photo":"jpg","details":"some
+        details"}},{"id":"2","type":"favorite","attributes":{"location_id":"pdkey","user_id":3,"title":"123
+        main st denver co","other_titles":"1925","pdf":"nil","photo":"jpg","details":"nil"}},{"id":"3","type":"favorite","attributes":{"location_id":"pk
+        id","user_id":3,"title":"1623 Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
+        details"}},{"id":"4","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
+        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
+        details"}},{"id":"5","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
+        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
+        details"}},{"id":"6","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
+        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg.url","details":"some
+        details"}},{"id":"7","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
+        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg.url","details":"some
+        details"}},{"id":"8","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
+        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
+        details"}},{"id":"9","type":"favorite","attributes":{"location_id":"pk id","user_id":1,"title":"1623
+        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
+        details"}},{"id":"10","type":"favorite","attributes":{"location_id":"pk id","user_id":5,"title":"1623
+        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg.url","details":"some
+        details"}},{"id":"11","type":"favorite","attributes":{"location_id":"pk id","user_id":5,"title":"1623
+        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg.url","details":"some
+        details"}},{"id":"12","type":"favorite","attributes":{"location_id":"pk id","user_id":5,"title":"1623
+        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg.url","details":"some
+        details"}}]}'
+  recorded_at: Tue, 02 Aug 2022 17:27:12 GMT
+recorded_with: VCR 6.1.0
