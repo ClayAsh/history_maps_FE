@@ -8,14 +8,13 @@ class Favorite
               :pdf,
               :user_id
   def initialize(attributes)
-    require 'pry'; binding.pry
-    @photo        = attributes[:medium_photo]
-    @title        = attributes[:title]
-    @other_titles = attributes[:other_titles]
-    @details      = attributes[:details]
     @id           = attributes[:id]
-    @location_id  = attributes[:location_id]
-    @pdf          = attributes[:pdf]
-    @user_id      = attributes[:user_id]
+    @photo        = attributes[:attributes][:photo]
+    @title        = attributes[:attributes][:title]
+    @other_titles = attributes[:attributes][:other_titles]
+    @details      = attributes[:attributes][:details]
+    @location_id  = attributes[:attributes][:location_id]
+    @pdf          = attributes[:attributes][:pdf]
+    @user_id      = attributes[:attributes][:user_id]
   end
 end

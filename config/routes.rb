@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
 
   get '/favorites', to: 'favorites#index'
+  
+  post '/favorites/new', to: 'favorites#create'
 
   resources :buildings, only: [:index, :show]
 end

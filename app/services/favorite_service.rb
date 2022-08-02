@@ -10,7 +10,7 @@ class FavoriteService < BaseService
   #   get_json(response)
   # end
 
-  def self.create_favorite(user_id, data)
+  def self.create_favorite(user_id, data) 
     response = conn.post("/api/v1/users/#{user_id}/favorites", {
       user_id: data[:user_id],
       title: data[:title],
