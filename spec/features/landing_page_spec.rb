@@ -7,12 +7,11 @@ RSpec.describe "Landing page" do
 
   it "has a link to create an account", :vcr do
     visit '/'
-# require "pry"; binding.pry
     expect(page).to_not have_link("Sign Out")
 
     click_link "Register/Sign In"
-# require "pry"; binding.pry
     expect(current_path).to eq('/')
+
     expect(page).to have_link("Sign Out")
     expect(page).to have_link("favorites")
 

@@ -2,10 +2,11 @@
 http_interactions:
 - request:
     method: post
-    uri: https://history-maps-be.herokuapp.com/api/v1/users/register
+    uri: https://history-maps-be.herokuapp.com/api/v1/users/1/favorites
     body:
       encoding: UTF-8
-      string: '{"email":"john.doe@example.com","username":"John Doe"}'
+      string: '{"user_id":1,"title":"1623 Market Street Denver CO","photo":"jpeg","location_id":"pk
+        id","other_titles":"1225","details":"some details","pdf":"pdf"}'
     headers:
       User-Agent:
       - Faraday v2.3.0
@@ -23,26 +24,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 02 Aug 2022 14:10:47 GMT
+      - Tue, 02 Aug 2022 14:21:49 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ab2589cd1611667ac91a0bb1c7c8a8b4"
+      - W/"d59d0b1edc72abeea251ce9941cda7c1"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d40395c4-8f76-4ecf-ba67-a33316698b28
+      - 331df8dc-a70e-4aef-9161-91b4ad5fcd9c
       X-Runtime:
-      - '0.003072'
+      - '0.064385'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5","type":"user","attributes":{"email":"john.doe@example.com","username":"John
-        Doe"}}}'
-  recorded_at: Tue, 02 Aug 2022 14:10:47 GMT
+      string: '{"data":{"id":"9","type":"favorite","attributes":{"location_id":"pk
+        id","user_id":1,"title":"1623 Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
+        details"}}}'
+  recorded_at: Tue, 02 Aug 2022 14:21:49 GMT
 recorded_with: VCR 6.1.0
