@@ -8,11 +8,11 @@ RSpec.describe FavoriteService do
     expect(favorites).to be_a(Hash)
   end
 
-  it 'established connection to create new favorite', :vcr do 
+  it 'establishes connection to create new favorite', :vcr do 
     user_id = 3
     data = { user_id: user_id,
              title: "1623 Market Street Denver CO",
-             photo: "jpeg.url",
+             photo: "jpeg",
              location_id: "pk id",
              other_titles: "1225",
              details: "some details",
