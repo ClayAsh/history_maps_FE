@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://history-maps-be.herokuapp.com/api/v1/users/1/favorites
+    body:
+      encoding: UTF-8
+      string: '{"user_id":1,"title":"1623 Market Street Denver CO","photo":"jpeg","location_id":"pk
+        id","other_titles":"1225","details":"some details","pdf":"pdf"}'
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 14:21:49 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"d59d0b1edc72abeea251ce9941cda7c1"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 331df8dc-a70e-4aef-9161-91b4ad5fcd9c
+      X-Runtime:
+      - '0.064385'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"9","type":"favorite","attributes":{"location_id":"pk
+        id","user_id":1,"title":"1623 Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
+        details"}}}'
+  recorded_at: Tue, 02 Aug 2022 14:21:49 GMT
+recorded_with: VCR 6.1.0

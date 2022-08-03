@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/users/3/favorites
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 14:15:15 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"90e209b76a9f10efb2d3870c9405d74c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bc38ab8a-1826-42a6-a675-a90af96264c7
+      X-Runtime:
+      - '0.003787'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"favorite","attributes":{"location_id":"pdkey","user_id":3,"title":"1237
+        tamarac denver co","other_titles":"more stuff","pdf":"pdf","photo":"jpg","details":"some
+        details"}},{"id":"2","type":"favorite","attributes":{"location_id":"pdkey","user_id":3,"title":"123
+        main st denver co","other_titles":"1925","pdf":"nil","photo":"jpg","details":"nil"}},{"id":"3","type":"favorite","attributes":{"location_id":"pk
+        id","user_id":3,"title":"1623 Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
+        details"}},{"id":"4","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
+        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
+        details"}},{"id":"5","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
+        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
+        details"}},{"id":"6","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
+        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg.url","details":"some
+        details"}},{"id":"7","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
+        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg.url","details":"some
+        details"}},{"id":"8","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
+        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
+        details"}}]}'
+  recorded_at: Tue, 02 Aug 2022 14:15:16 GMT
+recorded_with: VCR 6.1.0

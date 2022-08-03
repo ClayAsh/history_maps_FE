@@ -1,47 +1,48 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: https://history-maps-be.herokuapp.com/api/v1/search?location=1623%20Market%20St,%20Denver%20CO
+    method: post
+    uri: https://history-maps-be.herokuapp.com/api/v1/users/register
     body:
-      encoding: US-ASCII
-      string: ''
+      encoding: UTF-8
+      string: '{"email":"john.doe@example.com","username":"John Doe"}'
     headers:
       User-Agent:
       - Faraday v2.3.0
+      Content-Type:
+      - application/json
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 201
+      message: Created
     headers:
       Server:
       - Cowboy
       Date:
-      - Wed, 03 Aug 2022 21:49:51 GMT
+      - Tue, 02 Aug 2022 14:10:47 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"e217f56e85215fc40684a4054ddb6b86"
+      - W/"ab2589cd1611667ac91a0bb1c7c8a8b4"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-
-      - 013b6530-de57-4933-b307-04b5d501e610
+      - d40395c4-8f76-4ecf-ba67-a33316698b28
       X-Runtime:
-      - '0.050590'
+      - '0.003072'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"street":"1623 Market St","county":"Denver","city":"Denver","state":"CO","zipcode":"80202"}'
-
-  recorded_at: Wed, 03 Aug 2022 21:49:52 GMT
+      string: '{"data":{"id":"5","type":"user","attributes":{"email":"john.doe@example.com","username":"John
+        Doe"}}}'
+  recorded_at: Tue, 02 Aug 2022 14:10:47 GMT
 recorded_with: VCR 6.1.0
