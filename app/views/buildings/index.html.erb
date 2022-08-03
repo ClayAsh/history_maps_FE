@@ -1,11 +1,17 @@
 
 <div id="property">
-  <% if !@building.nil? %>
-    <p>Street address: <%= @building[:street] %></p>
-    <p>County: <%= @building[:county] %></p>
-    <p>City: <%= @building[:city] %></p>
-    <p>State: <%= @building[:state] %></p>
-    <p>Zipcode: <%= @building[:zipcode] %></p>
-    <%#= button_to "See This Property", building_path,  %>
-  <% end %>
+
+    <% @properties.each do |property| %>
+      Title: <%= property.title %><br>
+      Published Date: <%= property.published_date %><br>
+      Creator: <%= property.creator %><br>
+      <% if !property.image_full.nil? && property.image_full.include?(".jpg") %>
+          <%= image_tag(property.image_full) %>
+        <% elsif property.image_thumbnail %>
+          <%= image_tag(property.image_thumbnail) %>
+        <% else %>
+          message
+      <% end %><br>
+    <% end %>
+
 </div>

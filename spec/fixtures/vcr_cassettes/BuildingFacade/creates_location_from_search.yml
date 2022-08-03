@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 02 Aug 2022 14:10:45 GMT
+      - Wed, 03 Aug 2022 21:49:48 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b6ee46ec-27c6-444d-b2dc-147a7ad2ed34
+      - 90490206-9032-46ab-9af6-08e51594ae17
       X-Runtime:
-      - '0.054936'
+      - '0.064108'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,5 +41,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"street":"1623 Market St","county":"Denver","city":"Denver","state":"CO","zipcode":"80202"}'
-  recorded_at: Tue, 02 Aug 2022 14:10:46 GMT
+  recorded_at: Wed, 03 Aug 2022 21:49:48 GMT
 recorded_with: VCR 6.1.0

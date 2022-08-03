@@ -21,19 +21,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 02 Aug 2022 14:10:49 GMT
+      - Wed, 03 Aug 2022 21:49:52 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"4fe58da37094d8b19bc37c135b95c5c2"
+      - W/"cb882530c4d08db905a79ee48c3a8ab0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1018c8eb-5316-4e70-850d-4099f9aece2a
+      - 281787a7-86b1-4166-b688-81c452882ae3
       X-Runtime:
-      - '0.004409'
+      - '0.003705'
       Transfer-Encoding:
       - chunked
       Via:
@@ -47,6 +47,7 @@ http_interactions:
         Reinhart"}},{"id":"7","type":"user","attributes":{"email":"claycourtneyash@gmail.com","username":"Clay
         Ash"}},{"id":"8","type":"user","attributes":{"email":"lpluke5@gmail.com","username":"Luke
         Pascale"}},{"id":"9","type":"user","attributes":{"email":"vballmatt44@gmail.com","username":"Matt
-        Deming"}}]}'
-  recorded_at: Tue, 02 Aug 2022 14:10:50 GMT
+        Deming"}},{"id":"10","type":"user","attributes":{"email":"yankeedoodle@dandy.com","username":"Steve
+        Jobs"}}]}'
+  recorded_at: Wed, 03 Aug 2022 21:49:52 GMT
 recorded_with: VCR 6.1.0

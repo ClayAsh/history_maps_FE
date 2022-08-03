@@ -1,0 +1,237 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/search?location=80202
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 15:55:08 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"85328923177fcebcc0351827df2159ae"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4c063af0-dc23-400d-81f2-e78b9ee74fb9
+      X-Runtime:
+      - '0.049060'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"street":"","county":"Denver County","city":"Denver","state":"CO","zipcode":"80202"}'
+  recorded_at: Wed, 03 Aug 2022 15:55:09 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results?location=denver%20county%20co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 15:55:09 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"db766cd987a9b584981a1a87d267de3c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 182c246e-2db4-4904-b084-09627419744f
+      X-Runtime:
+      - '0.178823'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"title":"3. Photographic copy of photograph (ca. 1955, original negative
+        found in Beierle Barn, now on file at New Denver International Airport Office,
+        Stapleton International Ariport, Denver, CO). VIEW OF RESIDENCE AND FARM,
+        LOOKING NORTHEAST. - Beierle Farm, Hudson Road \u0026 96th Avenue, Denver,
+        Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0287.photos.183534p/","id":"co0287.photos.183534p","index_id":1},{"title":"Wellenkotter
+        Ranch, 112th Avenue \u0026 Watkins Road, Denver, Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0289/","id":"co0289","index_id":2},{"title":"Denver
+        International Airport Site, Between Fifty-sixth \u0026 128th Avenues, Buckley
+        Road \u0026 Box Elder Creek, Denver, Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0286/","id":"co0286","index_id":3},{"title":"Wellenkotter
+        Ranch, Main House, 112th Avenue \u0026 Watkins Road, Denver, Denver County,
+        CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0399/","id":"co0399","index_id":4},{"title":"Wellenkotter
+        Ranch, Barn, 112th Avenue \u0026 Watkins Road, Denver, Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0400/","id":"co0400","index_id":5},{"title":"Wellenkotter
+        Ranch, Privy, 112th Avenue \u0026 Watkins Road, Denver, Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0401/","id":"co0401","index_id":6},{"title":"Wellenkotter
+        Ranch, Trash Dump, 112th Avenue \u0026 Watkins Road, Denver, Denver County,
+        CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0402/","id":"co0402","index_id":7},{"title":"Wellenkotter
+        Ranch, Garage, 112th Avenue \u0026 Watkins Road, Denver, Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0403/","id":"co0403","index_id":8},{"title":"Beierle
+        Farm, Hudson Road \u0026 96th Avenue, Denver, Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0287/","id":"co0287","index_id":9},{"title":"Beierle
+        Farm, House, Hudson Road \u0026 96th Avenue, Denver, Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0386/","id":"co0386","index_id":10},{"title":"Altman
+        Farm, East side of Buckley Road, 0.5 mile south of 72nd Avenue, Denver, Denver
+        County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0288/","id":"co0288","index_id":11},{"title":"Ziegler
+        Farm, North side of 72nd Avenue, west of Hudson Road, Denver, Denver County,
+        CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0290/","id":"co0290","index_id":12},{"title":"Altman
+        Farm, House, East side of Buckley Road, 0.5 mile south of 72nd Avenue, Denver,
+        Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0394/","id":"co0394","index_id":13},{"title":"Altman
+        Farm, Barn, East side of Buckley Road, 0.5 mile south of 72nd Avenue, Denver,
+        Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0395/","id":"co0395","index_id":14},{"title":"Ziegler
+        Farm, House, North side of 72nd Avenue, west of Hudson Road, Denver, Denver
+        County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0404/","id":"co0404","index_id":15},{"title":"Ziegler
+        Farm, Barn, North side of 72nd Avenue, west of Hudson Road, Denver, Denver
+        County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0407/","id":"co0407","index_id":16},{"title":"Beierle
+        Farm, Second House, Hudson Road \u0026 96th Avenue, Denver, Denver County,
+        CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0387/","id":"co0387","index_id":17},{"title":"Beierle
+        Farm, Privy \u0026 Trash Dump, Hudson Road \u0026 96th Avenue, Denver, Denver
+        County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0388/","id":"co0388","index_id":18},{"title":"Beierle
+        Farm, Chicken House, Hudson Road \u0026 96th Avenue, Denver, Denver County,
+        CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0389/","id":"co0389","index_id":19},{"title":"Beierle
+        Farm, Scale House, Hudson Road \u0026 96th Avenue, Denver, Denver County,
+        CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0390/","id":"co0390","index_id":20}]'
+  recorded_at: Wed, 03 Aug 2022 15:55:10 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0287
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 15:56:06 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"30827f12d00037af124974196c0c0018"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8d87fcca-0442-409a-b0f2-43b4979f4311
+      X-Runtime:
+      - '0.093698'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Beierle Farm, Hudson Road \u0026 96th Avenue, Denver, Denver
+        County, CO","other_titles":"Denver International Airport Site","location_id":"co0287","lat":"39.8638","long":"-104.62002","details":"As
+        a complex, the current Beierle Farm offers an example of the work process
+        and flow of wheat and grain farm and its methods of operation. In particular
+        the grain bins and scale house offer examples of facilities frequently used
+        by farmers in the area.  Other Buildings testify to the evolution of the farm
+        from a dairy to a grain farm. The Beierle Farm also has significance as an
+        example of farm evolution and development by Adams County, Colorado, tenant
+        farmers. Tenant farming was a common pattern of land use and livelihood for
+        much of the area during most of the twentieth century. The Ray Beierle family
+        worked as tenant farmers for more than fifty years. They worked at this farm
+        for three different landlords, the Grossmans, the District Land Owners Trust
+        and finally for Box Elder Farms until 1990. In addition, the Beierle Farm
+        house is a significant example of an 1890s vernacular hipped cottage.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0287\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Wed, 03 Aug 2022 15:56:06 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0287
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 16:01:13 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"30827f12d00037af124974196c0c0018"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9a4ed88b-48b3-4a4d-9691-ac54ebe09c0e
+      X-Runtime:
+      - '0.141510'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Beierle Farm, Hudson Road \u0026 96th Avenue, Denver, Denver
+        County, CO","other_titles":"Denver International Airport Site","location_id":"co0287","lat":"39.8638","long":"-104.62002","details":"As
+        a complex, the current Beierle Farm offers an example of the work process
+        and flow of wheat and grain farm and its methods of operation. In particular
+        the grain bins and scale house offer examples of facilities frequently used
+        by farmers in the area.  Other Buildings testify to the evolution of the farm
+        from a dairy to a grain farm. The Beierle Farm also has significance as an
+        example of farm evolution and development by Adams County, Colorado, tenant
+        farmers. Tenant farming was a common pattern of land use and livelihood for
+        much of the area during most of the twentieth century. The Ray Beierle family
+        worked as tenant farmers for more than fifty years. They worked at this farm
+        for three different landlords, the Grossmans, the District Land Owners Trust
+        and finally for Box Elder Farms until 1990. In addition, the Beierle Farm
+        house is a significant example of an 1890s vernacular hipped cottage.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0287\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Wed, 03 Aug 2022 16:01:13 GMT
+recorded_with: VCR 6.1.0
