@@ -1,21 +1,29 @@
-  
+<div class="center-horiz">
 <img width="500" alt="History Maps" src="https://user-images.githubusercontent.com/99059063/182459512-81968120-d631-4729-86ab-ca15a892b804.jpeg"></br>
+</div>
 
-
+     <div class="center-horiz">
 <%@favorites.each do |f|%>
-  <% if f.user_id == @session_user_id.to_i %>
-    <%=f.title%></br>
-    <% if !f.photo.nil? && f.photo.include?("https") %>
-      <%= image_tag(f.photo) %></br>
-    <%end%>
-    <%if !f.other_titles.nil?%>
-      <%=f.other_titles%></br>
-    <%end%>
-    <%if !f.details.nil?%>
-      <%=f.details%></br>
-    <%end%>
-    <%if !f.pdf.nil?%>
-      <%=link_to "A PDF is Available!", f.pdf %></br>
-    <%end%>
-  <%end%>
+  <%# <% if f.user_id == @session_user_id.to_i %> 
+   <%# <div class="column">   %>
+      <div class="gallery">
+        <% if !f.photo.nil? && f.photo.include?("https") %>
+          <%= image_tag(f.photo, size: "300") %></br>
+        <%end%>
+        <div class="desc">
+        <strong><%=f.title%></strong></br>
+        <%if !f.other_titles.nil?%>
+          <%=f.other_titles%></br>
+        <%end%>
+        <%if !f.details.nil?%>
+          <%=f.details%></br>
+        <%end%>
+        <%if !f.pdf.nil?%>
+          <%=link_to "A PDF is Available!", f.pdf, target: '_blank' %></br>
+        <%end%>
+      <%# <%end%> 
+      </div>
+    </div>
+  </div>
+<%# </div> %>
 <%end%>
