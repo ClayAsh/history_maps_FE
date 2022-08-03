@@ -9,7 +9,7 @@ class FavoritesController < ApplicationController
   end
 
   def index
-    user_id = session[:user_id]
-    @favorites = FavoriteFacade.get_favorites(user_id)
+    @session_user_id = session[:user_id]
+    @favorites = FavoriteFacade.get_favorites(@session_user_id)
   end
 end
