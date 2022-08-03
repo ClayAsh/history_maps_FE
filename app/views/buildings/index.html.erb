@@ -2,11 +2,10 @@
 <div id="property">
 
     <% @properties.each do |property| %>
-      <%= property.title %><br>
-      <%= property.published_date %><br>
-      <%= property.creator %><br>
-      <%= property.creator %><br>
-      <% if property.image_full.include?(".jpg") %>
+      Title: <%= property.title %><br>
+      Published Date: <%= property.published_date %><br>
+      Creator: <%= property.creator %><br>
+      <% if !property.image_full.nil? && property.image_full.include?(".jpg") %>
           <%= image_tag(property.image_full) %>
         <% elsif property.image_thumbnail %>
           <%= image_tag(property.image_thumbnail) %>

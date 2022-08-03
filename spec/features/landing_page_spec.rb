@@ -5,7 +5,7 @@ RSpec.describe "Landing page" do
     Rails.application.env_config['omniauth.auth'] = OmniAuth.config.mock_auth[:google_oauth2]
   end
 
-  xit "has a link to create an account" do
+  it "has a link to create an account" do
     visit '/'
 
     expect(page).to have_link("Register/Sign In")
@@ -22,5 +22,5 @@ RSpec.describe "Landing page" do
     expect(page).to have_field("Address")
   end
 
-  
+
 end

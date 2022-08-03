@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://history-maps-be.herokuapp.com/api/v1/search?location=1623%20market%20street,%20denver%20co
+    uri: https://history-maps-be.herokuapp.com/api/v1/search?location=80202
     body:
       encoding: US-ASCII
       string: ''
@@ -21,25 +21,1222 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 29 Jul 2022 01:07:04 GMT
+      - Tue, 02 Aug 2022 20:59:31 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"e217f56e85215fc40684a4054ddb6b86"
+      - W/"85328923177fcebcc0351827df2159ae"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 177c53d8-e2a0-4bb4-9b4d-29c5896a3065
+      - e689cb63-6ab7-441b-9c44-8ea112ee0357
       X-Runtime:
-      - '0.313394'
+      - '0.050742'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"street":"1623 Market St","county":"Denver","city":"Denver","state":"CO","zipcode":"80202"}'
-  recorded_at: Fri, 29 Jul 2022 01:07:05 GMT
+      string: '{"street":"","county":"Denver County","city":"Denver","state":"CO","zipcode":"80202"}'
+  recorded_at: Tue, 02 Aug 2022 20:59:32 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results?location=denver%20county%20co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:32 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"db766cd987a9b584981a1a87d267de3c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 18ef31d1-a554-48dc-851f-35095c31fefa
+      X-Runtime:
+      - '0.156552'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"title":"3. Photographic copy of photograph (ca. 1955, original negative
+        found in Beierle Barn, now on file at New Denver International Airport Office,
+        Stapleton International Ariport, Denver, CO). VIEW OF RESIDENCE AND FARM,
+        LOOKING NORTHEAST. - Beierle Farm, Hudson Road \u0026 96th Avenue, Denver,
+        Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0287.photos.183534p/","id":"co0287.photos.183534p","index_id":1},{"title":"Wellenkotter
+        Ranch, 112th Avenue \u0026 Watkins Road, Denver, Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0289/","id":"co0289","index_id":2},{"title":"Denver
+        International Airport Site, Between Fifty-sixth \u0026 128th Avenues, Buckley
+        Road \u0026 Box Elder Creek, Denver, Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0286/","id":"co0286","index_id":3},{"title":"Wellenkotter
+        Ranch, Main House, 112th Avenue \u0026 Watkins Road, Denver, Denver County,
+        CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0399/","id":"co0399","index_id":4},{"title":"Wellenkotter
+        Ranch, Barn, 112th Avenue \u0026 Watkins Road, Denver, Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0400/","id":"co0400","index_id":5},{"title":"Wellenkotter
+        Ranch, Privy, 112th Avenue \u0026 Watkins Road, Denver, Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0401/","id":"co0401","index_id":6},{"title":"Wellenkotter
+        Ranch, Trash Dump, 112th Avenue \u0026 Watkins Road, Denver, Denver County,
+        CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0402/","id":"co0402","index_id":7},{"title":"Wellenkotter
+        Ranch, Garage, 112th Avenue \u0026 Watkins Road, Denver, Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0403/","id":"co0403","index_id":8},{"title":"Beierle
+        Farm, Hudson Road \u0026 96th Avenue, Denver, Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0287/","id":"co0287","index_id":9},{"title":"Beierle
+        Farm, House, Hudson Road \u0026 96th Avenue, Denver, Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0386/","id":"co0386","index_id":10},{"title":"Altman
+        Farm, East side of Buckley Road, 0.5 mile south of 72nd Avenue, Denver, Denver
+        County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0288/","id":"co0288","index_id":11},{"title":"Ziegler
+        Farm, North side of 72nd Avenue, west of Hudson Road, Denver, Denver County,
+        CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0290/","id":"co0290","index_id":12},{"title":"Altman
+        Farm, House, East side of Buckley Road, 0.5 mile south of 72nd Avenue, Denver,
+        Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0394/","id":"co0394","index_id":13},{"title":"Altman
+        Farm, Barn, East side of Buckley Road, 0.5 mile south of 72nd Avenue, Denver,
+        Denver County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0395/","id":"co0395","index_id":14},{"title":"Ziegler
+        Farm, House, North side of 72nd Avenue, west of Hudson Road, Denver, Denver
+        County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0404/","id":"co0404","index_id":15},{"title":"Ziegler
+        Farm, Barn, North side of 72nd Avenue, west of Hudson Road, Denver, Denver
+        County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0407/","id":"co0407","index_id":16},{"title":"Beierle
+        Farm, Second House, Hudson Road \u0026 96th Avenue, Denver, Denver County,
+        CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0387/","id":"co0387","index_id":17},{"title":"Beierle
+        Farm, Privy \u0026 Trash Dump, Hudson Road \u0026 96th Avenue, Denver, Denver
+        County, CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0388/","id":"co0388","index_id":18},{"title":"Beierle
+        Farm, Chicken House, Hudson Road \u0026 96th Avenue, Denver, Denver County,
+        CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0389/","id":"co0389","index_id":19},{"title":"Beierle
+        Farm, Scale House, Hudson Road \u0026 96th Avenue, Denver, Denver County,
+        CO","collection_link":"https://www.loc.gov/pictures/collection/hh/item/co0390/","id":"co0390","index_id":20}]'
+  recorded_at: Tue, 02 Aug 2022 20:59:32 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0287
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:32 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"30827f12d00037af124974196c0c0018"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1ccd34b9-3e01-4fc7-b1eb-57e5691a1505
+      X-Runtime:
+      - '0.094557'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Beierle Farm, Hudson Road \u0026 96th Avenue, Denver, Denver
+        County, CO","other_titles":"Denver International Airport Site","location_id":"co0287","lat":"39.8638","long":"-104.62002","details":"As
+        a complex, the current Beierle Farm offers an example of the work process
+        and flow of wheat and grain farm and its methods of operation. In particular
+        the grain bins and scale house offer examples of facilities frequently used
+        by farmers in the area.  Other Buildings testify to the evolution of the farm
+        from a dairy to a grain farm. The Beierle Farm also has significance as an
+        example of farm evolution and development by Adams County, Colorado, tenant
+        farmers. Tenant farming was a common pattern of land use and livelihood for
+        much of the area during most of the twentieth century. The Ray Beierle family
+        worked as tenant farmers for more than fifty years. They worked at this farm
+        for three different landlords, the Grossmans, the District Land Owners Trust
+        and finally for Box Elder Farms until 1990. In addition, the Beierle Farm
+        house is a significant example of an 1890s vernacular hipped cottage.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0287\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:32 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0289
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:32 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a47ddb670b1868ec226d157ba1460aee"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3602848e-797b-4ca9-a4dc-aa10554559f3
+      X-Runtime:
+      - '0.141508'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Wellenkotter Ranch, 112th Avenue \u0026 Watkins Road, Denver,
+        Denver County, CO","other_titles":"Denver International Airport Site","location_id":"co0289","lat":"","long":"","details":"The
+        Wellenkotter Ranch is representative of the historical development of agriculture
+        in west-central Adams County during the late nineteenth century. The ranch,
+        covering about 1,100 acres at its largest, typified the size of ranches during
+        the late nineteenth century in much of the Denver International Airport area
+        and the greater area between the South Platte River and Box Elder Creek. Also,
+        the extended family nature of the operation during the late nineteenth century
+        was one of the common patterns of ranch and farm operation on the Colorado
+        plains during that same period.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0289\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:33 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0286
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:32 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"27682418bd4715410eba8b6303200fc5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8a788fad-60f0-4713-bf6f-7d741016f5ad
+      X-Runtime:
+      - '0.111865'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Denver International Airport Site, Between Fifty-sixth \u0026
+        128th Avenues, Buckley Road \u0026 Box Elder Creek, Denver, Denver County,
+        CO","other_titles":"","location_id":"co0286","lat":"","long":"","details":"The
+        Denver International Airport site has a Euroamerican history that can be traced
+        to the early nineteenth century.  Today, cultural remains and archival information
+        exist to explain and interpret that history.  The primary past land uses of
+        the airport site offer an easily comprehensible vehicle for viewing the history
+        of the area.  The earliest uses Euroamericans found for the airport site and
+        the lands around it were connected to the development of a Colorado plains
+        transportation network.  The second, and more pervasive, use was for agriculture.  The
+        agricultural uses represent many specializations including ranching, dryland
+        and irrigated farming, dairying and cattle feeding in preparation for marketing.  The
+        relative importance of these activities changed over time as did the methods
+        different individuals used.  Closely associated with agriculture have been
+        shifts in land ownership patterns.  By 1910 most of the land had passed from
+        the public domain into private ownership.  After that transition occurred,
+        the most significant change has been growth of tenant farming.  In many ways
+        the Euroamerican history of the airport site study area is a microcosm of
+        the history of the larger northeastern Colorado plains area.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0286\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:33 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0399
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:33 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ec5a3e5c1d51257d9f9f6c676218d32a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9f785ff1-0211-49fa-beb4-18d609fe9e8e
+      X-Runtime:
+      - '0.154446'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Wellenkotter Ranch, Main House, 112th Avenue \u0026 Watkins
+        Road, Denver, Denver County, CO","other_titles":"Denver International Airport
+        Site","location_id":"co0399","lat":"","long":"","details":"The Wellenkotter
+        Ranch is representative of the historical development of agriculture in west-central
+        Adams County during the late nineteenth century. The ranch, covering about
+        1,100 acres at its largest, typified the size of ranches during the late nineteenth
+        century in much of the Denver International Airport area and the greater area
+        between the South Platte River and Box Elder Creek. Also, the extended family
+        nature of the operation during the late nineteenth century was one of the
+        common patterns of ranch and farm operation on the Colorado plains during
+        that same period.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0399\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:34 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0400
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:34 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"79850c3f2863df023d3c486a53b1a0a0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d590e5a3-b8fa-4853-b99c-f5d3729849c9
+      X-Runtime:
+      - '0.101457'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Wellenkotter Ranch, Barn, 112th Avenue \u0026 Watkins Road,
+        Denver, Denver County, CO","other_titles":"Denver International Airport Site","location_id":"co0400","lat":"","long":"","details":"The
+        Wellenkotter Ranch is representative of the historical development of agriculture
+        in west-central Adams County during the late nineteenth century. The ranch,
+        covering about 1,100 acres at its largest, typified the size of ranches during
+        the late nineteenth century in much of the Denver International Airport area
+        and the greater area between the South Platte River and Box Elder Creek. Also,
+        the extended family nature of the operation during the late nineteenth century
+        was one of the common patterns of ranch and farm operation on the Colorado
+        plains during that same period.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0400\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:34 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0401
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:34 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"37f9a526bfdd9d8a73ebfc7bf0135b43"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 908a02d5-7df2-414d-b2ca-4095205cd501
+      X-Runtime:
+      - '0.109104'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Wellenkotter Ranch, Privy, 112th Avenue \u0026 Watkins Road,
+        Denver, Denver County, CO","other_titles":"Denver International Airport Site","location_id":"co0401","lat":"","long":"","details":"The
+        Wellenkotter Ranch is representative of the historical development of agriculture
+        in west-central Adams County during the late nineteenth century. The ranch,
+        covering about 1,100 acres at its largest, typified the size of ranches during
+        the late nineteenth century in much of the Denver International Airport area
+        and the greater area between the South Platte River and Box Elder Creek. Also,
+        the extended family nature of the operation during the late nineteenth century
+        was one of the common patterns of ranch and farm operation on the Colorado
+        plains during that same period.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0401\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:34 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0402
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:34 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"627ec769384db80d752ce51cd89e04b2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9c6ea5fe-481e-4be8-a934-403d4eec07bd
+      X-Runtime:
+      - '0.113757'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Wellenkotter Ranch, Trash Dump, 112th Avenue \u0026 Watkins
+        Road, Denver, Denver County, CO","other_titles":"Denver International Airport
+        Site","location_id":"co0402","lat":"","long":"","details":"The Wellenkotter
+        Ranch is representative of the historical development of agriculture in west-central
+        Adams County during the late nineteenth century. The ranch, covering about
+        1,100 acres at its largest, typified the size of ranches during the late nineteenth
+        century in much of the Denver International Airport area and the greater area
+        between the South Platte River and Box Elder Creek. Also, the extended family
+        nature of the operation during the late nineteenth century was one of the
+        common patterns of ranch and farm operation on the Colorado plains during
+        that same period.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0402\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:35 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0403
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:35 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"9d19aab1e863f509e55c2ba27b3e36f2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3130ba21-be9e-4091-873c-2d11059c71f1
+      X-Runtime:
+      - '0.147557'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Wellenkotter Ranch, Garage, 112th Avenue \u0026 Watkins Road,
+        Denver, Denver County, CO","other_titles":"Denver International Airport Site","location_id":"co0403","lat":"","long":"","details":"The
+        Wellenkotter Ranch is representative of the historical development of agriculture
+        in west-central Adams County during the late nineteenth century. The ranch,
+        covering about 1,100 acres at its largest, typified the size of ranches during
+        the late nineteenth century in much of the Denver International Airport area
+        and the greater area between the South Platte River and Box Elder Creek. Also,
+        the extended family nature of the operation during the late nineteenth century
+        was one of the common patterns of ranch and farm operation on the Colorado
+        plains during that same period.","photo_url":"//cdn.loc.gov/master/pnp/habshaer/co/co0400/co0403/data/co0403data.pdf","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:35 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0287
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:35 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"30827f12d00037af124974196c0c0018"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4c3b33fc-bc7d-458c-b6a5-790c27a86697
+      X-Runtime:
+      - '0.097713'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Beierle Farm, Hudson Road \u0026 96th Avenue, Denver, Denver
+        County, CO","other_titles":"Denver International Airport Site","location_id":"co0287","lat":"39.8638","long":"-104.62002","details":"As
+        a complex, the current Beierle Farm offers an example of the work process
+        and flow of wheat and grain farm and its methods of operation. In particular
+        the grain bins and scale house offer examples of facilities frequently used
+        by farmers in the area.  Other Buildings testify to the evolution of the farm
+        from a dairy to a grain farm. The Beierle Farm also has significance as an
+        example of farm evolution and development by Adams County, Colorado, tenant
+        farmers. Tenant farming was a common pattern of land use and livelihood for
+        much of the area during most of the twentieth century. The Ray Beierle family
+        worked as tenant farmers for more than fifty years. They worked at this farm
+        for three different landlords, the Grossmans, the District Land Owners Trust
+        and finally for Box Elder Farms until 1990. In addition, the Beierle Farm
+        house is a significant example of an 1890s vernacular hipped cottage.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0287\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:36 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0386
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:35 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8b6160fcbc314caa56eace6fb50e7f7b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 37a0e0f5-0d26-4f11-b817-9b95e6c0c568
+      X-Runtime:
+      - '0.119075'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Beierle Farm, House, Hudson Road \u0026 96th Avenue, Denver,
+        Denver County, CO","other_titles":"Denver International Airport Site","location_id":"co0386","lat":"","long":"","details":"As
+        a complex, the current Beierle Farm offers an example of the work process
+        and flow of a wheat and grain farm and its methods of operation. In particular
+        the grain bins and scale house offer examples of facilities frequently used
+        by farmers in the area. Other buildings testify to the evolution of the farm
+        from a dairy to a grain farm. The Beierle Farm also has significance as an
+        example of farm evolution and development by Adams County, Colorado, tenant
+        farmers. Tenant farming was a common pattern of land use and livelihood for
+        much of the area during most of the twentieth century. The Ray Beierle family
+        worked as tenant farmers for more than fifty years. They worked at this farm
+        for three different landlords, the Grossmans, the District Land Owners Trust
+        and finally for Box Elder Farms until 1990. In addition, the Beierle Farm
+        house is a significant example of an 1890s vernacular hipped cottage.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0386\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:36 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0288
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:36 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"9912f954ac5fc8bc9155f76b0c62f0ba"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e47c2c50-d189-46a1-8bca-0171b7537c0c
+      X-Runtime:
+      - '0.115762'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Altman Farm, East side of Buckley Road, 0.5 mile south of
+        72nd Avenue, Denver, Denver County, CO","other_titles":"Denver International
+        Airport Site","location_id":"co0288","lat":"","long":"","details":"The Altman
+        Farm is a significant example of early 1900s rural adaptations to the evolving
+        economic needs and changing methods of livestock husbandry. The major farm
+        outbuilding, the barn, offers an important example of the adaptive nature
+        of area farmers and farm managers in the remodelling of a livestock barn into
+        both a livestock barn and a feed mill for the nearby, associated feed lots.
+        The farm also illustrates the work process and flow of a cattle feeding and
+        care operation.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0288\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:37 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0290
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:37 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"1eddd8dbe002d5948e7487eab1abbdb3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9f4c272d-f557-4b49-82e8-92c813421419
+      X-Runtime:
+      - '0.108690'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Ziegler Farm, North side of 72nd Avenue, west of Hudson Road,
+        Denver, Denver County, CO","other_titles":"Denver International Airport Site","location_id":"co0290","lat":"","long":"","details":"The
+        Ziegler Farm is an example of 1920s and 1930s vernacular farm architecture.
+        The farm buildings provide examples of Colorado plains dairy farm architecture
+        during the period. As a complex, the farmstead offers an example of the work
+        process and flow of a dairy farm and its methods of operation. In particular,
+        the two barns , milk shed and the associated corrals offer a clear representation
+        of the evolution of dairy cattle tending and milking operation as carried
+        out by the Zieglers from the 1930s through 1973.\n\nThe Ziegler tenant and
+        dairy farm is an example of farm development in the area.  Tenant farming
+        was a common pattern of land use and livelihood for much of the area during
+        most of the twentieth century. The Ziegler family worked as tenant farmers
+        for three generations and their tenancy lasted over sixty years. Family members
+        worked first for the District Land Owners Trust and then for Box Elder Farms
+        until the 1990s.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0290\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:37 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0394
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:37 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"9fe2d20c0265a738298bc27bdba86530"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8064971a-0e73-4182-9631-965d00ad13c2
+      X-Runtime:
+      - '0.140104'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Altman Farm, House, East side of Buckley Road, 0.5 mile south
+        of 72nd Avenue, Denver, Denver County, CO","other_titles":"Denver International
+        Airport Site","location_id":"co0394","lat":"","long":"","details":"The Altman
+        Farm is a significant example of early 1900s rural adaptations to the evolving
+        economic needs and changing methods of livestock husbandry. The major farm
+        outbuilding, the barn, offers an important example of the adaptive nature
+        of area farmers and farm managers in the remodelling of a livestock barn into
+        both a livestock barn and a feed mill for the nearby, associated feed lots.
+        The farm also illustrates the work process and flow of a cattle feeding and
+        care operation.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0394\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:37 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0395
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:37 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"fb7b956989288c3dc753d707d8fb3ffa"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8b8fb3cf-dc28-453a-8994-1be4c6f96ba5
+      X-Runtime:
+      - '0.112351'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Altman Farm, Barn, East side of Buckley Road, 0.5 mile south
+        of 72nd Avenue, Denver, Denver County, CO","other_titles":"Denver International
+        Airport Site","location_id":"co0395","lat":"","long":"","details":"This 1923
+        barn is constructed of crude cast-in-place concrete up to the second floor,
+        horizontal wood siding over wood frame on the second floor, and a plank-truss
+        roof system with original wood shingles. Originally used as a livestock barn,
+        it was modified in 1934 to serve as a small grain elevator as well. Grain
+        was dumped into the ground chute outside the east end of the barn and moved
+        by auger to pit in the barn floor. From there, a lifting mechanism (no longer
+        in place) raised the grain to the top of the elevator, at which point it was
+        directed into various plywood and metal chutes leading to different grain
+        bins. This allowed the creation of feed mixes tailored to specific livestock
+        needs. Feed from a given bin could be loaded into trucks through a metal chute
+        penetrating the exterior wall of the bin and barn.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0395\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:38 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0404
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:37 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"e493dcec24141b387b68072b1b0f102d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fca66584-7f53-4859-b0ca-fdb5b692c51c
+      X-Runtime:
+      - '0.102273'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Ziegler Farm, House, North side of 72nd Avenue, west of Hudson
+        Road, Denver, Denver County, CO","other_titles":"Denver International Airport
+        Site","location_id":"co0404","lat":"","long":"","details":"The Ziegler Farm
+        is an example of 1920s and 1930s vernacular farm architecture. The farm buildings
+        provide examples of Colorado plains dairy farm architecture during the period.
+        As a complex, the farmstead offers an example of the work process and flow
+        of a dairy farm and its methods of operation. In particular, the two barns
+        , milk shed and the associated corrals offer a clear representation of the
+        evolution of dairy cattle tending and milking operation as carried out by
+        the Zieglers from the 1930s through 1973.\n\nThe Ziegler tenant and dairy
+        farm is an example of farm development in the area.  Tenant farming was a
+        common pattern of land use and livelihood for much of the area during most
+        of the twentieth century. The Ziegler family worked as tenant farmers for
+        three generations and their tenancy lasted over sixty years. Family members
+        worked first for the District Land Owners Trust and then for Box Elder Farms
+        until the 1990s.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0404\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:38 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0407
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:38 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"3096de0682a0fabd1c589a7890c3bcf6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a46c26b3-71c9-4ebc-b7e7-7538610c32b7
+      X-Runtime:
+      - '0.220479'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Ziegler Farm, Barn, North side of 72nd Avenue, west of Hudson
+        Road, Denver, Denver County, CO","other_titles":"Denver International Airport
+        Site","location_id":"co0407","lat":"","long":"","details":"The Ziegler Farm
+        is an example of 1920s and 1930s vernacular farm architecture. The farm buildings
+        provide examples of Colorado plains dairy farm architecture during the period.
+        As a complex, the farmstead offers an example of the work process and flow
+        of a dairy farm and its methods of operation. In particular, the two barns
+        , milk shed and the associated corrals offer a clear representation of the
+        evolution of dairy cattle tending and milking operation as carried out by
+        the Zieglers from the 1930s through 1973.\n\nThe Ziegler tenant and dairy
+        farm is an example of farm development in the area.  Tenant farming was a
+        common pattern of land use and livelihood for much of the area during most
+        of the twentieth century. The Ziegler family worked as tenant farmers for
+        three generations and their tenancy lasted over sixty years. Family members
+        worked first for the District Land Owners Trust and then for Box Elder Farms
+        until the 1990s.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0407\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:39 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0387
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:38 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0d5415efa671351e67110a51bce1df0f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b5f0b4a9-daae-4489-ab33-1a1cddd4a2cf
+      X-Runtime:
+      - '0.104262'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Beierle Farm, Second House, Hudson Road \u0026 96th Avenue,
+        Denver, Denver County, CO","other_titles":"Denver International Airport Site","location_id":"co0387","lat":"","long":"","details":"As
+        a complex, the current Beierle Farm offers an example of the work process
+        and flow of a wheat and grain farm and its methods of operation.  In particular
+        the grain bins and scale house offer examples of facilities frequently used
+        by farmers in the area. Other buildings testify to the evolution of the farm
+        from a dairy to a grain farm. The Beierle Farm also has significance as an
+        example of farm evolution and development by Adams County, Colorado, tenant
+        farmers. Tenant farming was a common pattern of land use and livelihood for
+        much of the area during most of the twentieth century. The Ray Beierle family
+        worked as tenant farmers for more than fifty years. They worked at this farm
+        for three different landlords, the Grossmans, the District Land Owners Trust
+        and finally for Box Elder Farms until 1990. In addition, the Beierle Farm
+        house is a significant example of an 1890s vernacular hipped cottage.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0387\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:39 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0388
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:39 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c693d66d2d1587db57a81a3fa2c96d90"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 18908deb-cda1-4220-8a8f-a7fbc1e9b848
+      X-Runtime:
+      - '0.095301'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Beierle Farm, Privy \u0026 Trash Dump, Hudson Road \u0026
+        96th Avenue, Denver, Denver County, CO","other_titles":"Denver International
+        Airport Site","location_id":"co0388","lat":"","long":"","details":"As a complex,
+        the current Beierle Farm offers an example of the work process and flow of
+        a wheat and grain farm and its methods of operation. In particular the grain
+        bins and scale house offer examples of facilities frequently used by farmers
+        in the area. Other buildings testify to the evolution of the farm from a dairy
+        to a grain farm. The Beierle Farm also has significance as an example of farm
+        evolution and development by Adams County, Colorado, tenant farmers. Tenant
+        farming was a common pattern of land use and livelihood for much of the area
+        during most of the twentieth century. The Ray Beierle family worked as tenant
+        farmers for more than fifty years. They worked at this farm for three different
+        landlords, the Grossmans, the District Land Owners Trust and finally for Box
+        Elder Farms until 1990. In addition, the Beierle Farm house is a significant
+        example of an 1890s vernacular hipped cottage.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0388\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:39 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0389
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:39 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4d47674bbd17e87d6d393cec4aac29db"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 780d9188-7d5c-4a6d-b6ac-b88b9186a0c4
+      X-Runtime:
+      - '0.154790'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Beierle Farm, Chicken House, Hudson Road \u0026 96th Avenue,
+        Denver, Denver County, CO","other_titles":"Denver International Airport Site","location_id":"co0389","lat":"","long":"","details":"As
+        a complex, the current Beierle Farm offers an example of the work process
+        and flow of a wheat and grain farm and its methods of operation. In particular
+        the grain bins and scale house offer examples of facilities frequently used
+        by farmers in the area. Other buildings testify to the evolution of the farm
+        from a dairy to a grain farm. The Beierle Farm also has significance as an
+        example of farm evolution and development by Adams County, Colorado, tenant
+        farmers. Tenant farming was a common pattern of land use and livelihood for
+        much of the area during most of the twentieth century. The Ray Beierle family
+        worked as tenant farmers for more than fifty years. They worked at this farm
+        for three different landlords, the Grossmans, the District Land Owners Trust
+        and finally for Box Elder Farms until 1990. In addition, the Beierle Farm
+        house is a significant example of an 1890s vernacular hipped cottage.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0389\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:40 GMT
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/co0390
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 02 Aug 2022 20:59:40 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8e956da2d97d781b6c6d9036f85c1319"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 84babce1-3713-4342-89a2-ab4681311fc8
+      X-Runtime:
+      - '0.100068'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Beierle Farm, Scale House, Hudson Road \u0026 96th Avenue,
+        Denver, Denver County, CO","other_titles":"Denver International Airport Site","location_id":"co0390","lat":"","long":"","details":"As
+        a complex, the current Beierle Farm offers an example of the work process
+        and flow of a wheat and grain farm and its methods of operation. In particular
+        the grain bins and scale house offer examples of facilities frequently used
+        by farmers in the area. Other buildings testify to the evolution of the farm
+        from a dairy to a grain farm. The Beierle Farm also has significance as an
+        example of farm evolution and development by Adams County, Colorado, tenant
+        farmers. Tenant farming was a common pattern of land use and livelihood for
+        much of the area during most of the twentieth century. The Ray Beierle family
+        worked as tenant farmers for more than fifty years. They worked at this farm
+        for three different landlords, the Grossmans, the District Land Owners Trust
+        and finally for Box Elder Farms until 1990. In addition, the Beierle Farm
+        house is a significant example of an 1890s vernacular hipped cottage.","photo_url":"https://stage.loc.gov/pictures/search/?q=Photograph:
+        co0390\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null}'
+  recorded_at: Tue, 02 Aug 2022 20:59:40 GMT
 recorded_with: VCR 6.1.0

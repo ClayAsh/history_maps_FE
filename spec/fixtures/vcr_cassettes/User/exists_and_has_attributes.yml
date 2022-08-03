@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 29 Jul 2022 01:07:05 GMT
+      - Wed, 03 Aug 2022 21:49:51 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -33,9 +33,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 14e9058c-b917-484f-a4cf-edae5b91748b
+      - f525e963-6cd2-4739-994e-09abf401df0b
       X-Runtime:
-      - '0.003572'
+      - '0.003836'
       Transfer-Encoding:
       - chunked
       Via:
@@ -43,5 +43,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"4","type":"user","attributes":{"email":"bob@email.com","username":"Bob"}}}'
-  recorded_at: Fri, 29 Jul 2022 01:07:06 GMT
+  recorded_at: Wed, 03 Aug 2022 21:49:51 GMT
 recorded_with: VCR 6.1.0
