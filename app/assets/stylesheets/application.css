@@ -19,12 +19,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: American Typewriter, serif;
+}
+
+.back {
+  margin: 5px;
+  color: black;
 }
 
 .login{
   margin: 5px;
   color: black;
 }
+
 .logout{
   margin: 5px;
   color: black;
@@ -38,6 +45,7 @@
   margin: 5px;
   color: black;
 }
+
 
 .nav_left{
   background-color: white;
@@ -65,7 +73,7 @@ h1 {
 /* .responsive {
   max-width: 100%;
   height: auto;
-} */ 
+} */
 
 div.gallery {
   margin: 5px;
@@ -94,5 +102,6 @@ div.desc {
   margin: auto;
   /* margin-right: auto; */
   width: 50%;
+  text-align: center;
+  font-family: American Typewriter, serif;
 }
-

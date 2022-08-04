@@ -1,22 +1,18 @@
 <div class="center-horiz">
-<img width="500" alt="History Maps" src="https://user-images.githubusercontent.com/99059063/182459512-81968120-d631-4729-86ab-ca15a892b804.jpeg"></br>
+<img width="300" alt="History Maps" src="https://user-images.githubusercontent.com/99059063/182459512-81968120-d631-4729-86ab-ca15a892b804.jpeg"></br>
 </div>
 
-    <div class="center-horiz">
     <%@favorites.each do |f|%>
-      <div class="gallery">
+    <div class="center-horiz">
         <% if !f.image_full.nil? %>
           <%= image_tag(f.image_full, size: "300") %></br>
         <%end%>
-        <div class="desc">
         <strong><%=f.title%></strong></br>
         <%if !f.creator.nil?%>
-          <%=f.creator%></br>
+          Creator: <%=f.creator%></br>
         <%end%>
         <%if !f.published_date.nil?%>
-          <%=f.published_date%></br>
+          Published Date: <%=f.published_date%></br>
         <%end%>
-      </div>
-    </div>
   </div>
 <%end%>
