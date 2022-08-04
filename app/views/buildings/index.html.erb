@@ -1,20 +1,21 @@
 
 <div id="property">
 
-    <% @properties.each do |property| %>
+  <% @properties.each_with_index do |property, index| %>
+    <div id="<%= index %>">
       Title: <%= property.title %><br>
       Published Date: <%= property.published_date %><br>
       Creator: <%= property.creator %><br>
       <% if session[:user_id] %>
-         <%= button_to "Add To Favorites", '/favorites/new', method: :post, params: {userid: session[:user_id], title: property.title, published_date: property.published_date, creator: property.creator, image_full: property.image_full, thumbnail: property.image_thumbnail, short_id: property.short_id} %>
+        <%= button_to "Add To Favorites", '/favorites/new', method: :post, params: {userid: session[:user_id], title: property.title, published_date: property.published_date, creator: property.creator, image_full: property.image_full, thumbnail: property.image_thumbnail, short_id: property.short_id} %>
       <% end %>
       <% if !property.image_full.nil? && property.image_full.include?(".jpg") %>
-          <%= image_tag(property.image_full) %>
-        <% elsif property.image_thumbnail %>
-          <%= image_tag(property.image_thumbnail) %>
-        <% else %>
-          message
+        <%= image_tag(property.image_full) %>
+      <% elsif property.image_thumbnail %>
+        <%= image_tag(property.image_thumbnail) %>
+      <% else %>
+      message
       <% end %><br>
-    <% end %>
-
+    </div>
+  <% end %>
 </div>
