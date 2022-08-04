@@ -1,0 +1,13 @@
+<%= @property.title %><br>
+<%= @property.other_titles %><br>
+<% if @property.photo_large %>
+<%= image_tag(@property.photo_large) %>
+<% elsif @property.photo_medium %>
+<%= image_tag(@property.photo_medium) %>
+<% elsif @property.service_medium %>
+<%= image_tag(@property.service_medium) %>
+<% elsif @property.service_low %>
+<%= image_tag(@property.service_low) %>
+<% else %>
+message
+<% end %><br>
