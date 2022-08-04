@@ -1,20 +1,18 @@
 class Favorite 
-  attr_reader :photo,
-              :title,
-              :other_titles,
-              :details,
-              :id,
-              :location_id,
-              :pdf,
+  attr_reader :title,
+              :published_date,
+              :creator,
+              :image_full,
+              :thumbnail,
+              :short_id,
               :user_id
   def initialize(attributes)
-    @id           = attributes[:id]
-    @photo        = attributes[:attributes][:photo]
-    @title        = attributes[:attributes][:title]
-    @other_titles = attributes[:attributes][:other_titles]
-    @details      = attributes[:attributes][:details]
-    @location_id  = attributes[:attributes][:location_id]
-    @pdf          = attributes[:attributes][:pdf]
-    @user_id      = attributes[:attributes][:user_id]
+    @title          = attributes[:attributes][:title]
+    @published_date = attributes[:attributes][:published_date]
+    @creator        = attributes[:attributes][:creator]
+    @image_full     = attributes[:attributes][:image_full]
+    @thumbnail      = attributes[:attributes][:thumbnail]
+    @short_id       = attributes[:attributes][:short_id]
+    @user_id        = attributes[:attributes][:user_id]
   end
 end
