@@ -1,21 +1,28 @@
+<div class="center-horiz">
+<img width="300" alt="History Maps" src="https://user-images.githubusercontent.com/99059063/182459512-81968120-d631-4729-86ab-ca15a892b804.jpeg"></br>
+</div>
 
 <div id="property">
+  <div class="center-horiz">
 
   <% @properties.each_with_index do |property, index| %>
     <div id="<%= index %>">
-      Title: <%= property.title %><br>
-      Published Date: <%= property.published_date %><br>
+      <% if !property.image_full.nil? && property.image_full.include?(".jpg") %>
+      <%= image_tag(property.image_full) %>
+      <% elsif property.image_thumbnail %>
+      <%= image_tag(property.image_thumbnail) %>
+      <% else %>
+        No Photo Available
+      <% end %><br>
+      <div class="center-horiz">
+      <strong>Title: <%= property.title %></strong><br>
       Creator: <%= property.creator %><br>
+      Published Date: <%= property.published_date %><br>
       <% if session[:user_id] %>
         <%= button_to "Add To Favorites", '/favorites/new', method: :post, params: {userid: session[:user_id], title: property.title, published_date: property.published_date, creator: property.creator, image_full: property.image_full, thumbnail: property.image_thumbnail, short_id: property.short_id} %>
-      <% end %>
-      <% if !property.image_full.nil? && property.image_full.include?(".jpg") %>
-        <%= image_tag(property.image_full) %>
-      <% elsif property.image_thumbnail %>
-        <%= image_tag(property.image_thumbnail) %>
-      <% else %>
-      message
-      <% end %><br>
-    </div>
+      <% end %><br><br>
+        </div>
+      </div>
   <% end %>
+  </div>
 </div>
