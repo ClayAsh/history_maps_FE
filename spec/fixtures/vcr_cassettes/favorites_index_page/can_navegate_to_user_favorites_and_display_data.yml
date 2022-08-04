@@ -24,29 +24,29 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 04 Aug 2022 16:04:00 GMT
+      - Thu, 04 Aug 2022 17:00:27 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"1bf6702c96b31bc1de8b333352bacae6"
+      - W/"6cac3f8caeb72b5fe26581b70bc46a87"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 518234e8-071c-403a-bc85-f6d85c8edfbc
+      - 9a01fe4e-4692-4412-985b-4e6dd8cb99f3
       X-Runtime:
-      - '0.013694'
+      - '0.007856'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"favorite","attributes":{"user_id":8,"title":"1722
+      string: '{"data":{"id":"20","type":"favorite","attributes":{"user_id":8,"title":"1722
         Quebec Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475009-950a6646-f773-429a-ba31-bb821ddeaea7.jpg","short_id":"co0099","published_date":"1930","creator":"Susie
         Q","thumbnail":null}}}'
-  recorded_at: Thu, 04 Aug 2022 16:04:01 GMT
+  recorded_at: Thu, 04 Aug 2022 17:00:27 GMT
 - request:
     method: post
     uri: https://history-maps-be.herokuapp.com/api/v1/users/register
@@ -70,7 +70,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 04 Aug 2022 16:04:01 GMT
+      - Thu, 04 Aug 2022 17:00:27 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -80,9 +80,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e67d8657-7591-44c2-be46-09825aa00114
+      - eff5cee2-252d-4c15-9a31-b262cb7e7cf3
       X-Runtime:
-      - '0.004411'
+      - '0.003756'
       Transfer-Encoding:
       - chunked
       Via:
@@ -91,7 +91,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"8","type":"user","attributes":{"email":"john.doe@example.com","username":"John
         Doe"}}}'
-  recorded_at: Thu, 04 Aug 2022 16:04:01 GMT
+  recorded_at: Thu, 04 Aug 2022 17:00:27 GMT
 - request:
     method: get
     uri: https://history-maps-be.herokuapp.com/api/v1/users/8/favorites
@@ -113,19 +113,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 04 Aug 2022 16:04:01 GMT
+      - Thu, 04 Aug 2022 17:00:27 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"15e1f38c98fd9939f08bf7ea180cc23e"
+      - W/"a50b89fca21d0e3504d8569fad36b6bb"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f5cf6e83-31e9-44a0-aeda-b48541c4d9ce
+      - c2e93eac-b682-4a06-87f6-d9e72fddbf23
       X-Runtime:
-      - '0.004770'
+      - '0.006139'
       Transfer-Encoding:
       - chunked
       Via:
@@ -134,6 +134,25 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":[{"id":"7","type":"favorite","attributes":{"user_id":8,"title":"1722
         Quebec Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475009-950a6646-f773-429a-ba31-bb821ddeaea7.jpg","short_id":"co0099","published_date":"1930","creator":"Susie
+        Q","thumbnail":null}},{"id":"13","type":"favorite","attributes":{"user_id":8,"title":"1722
+        Quebec Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475009-950a6646-f773-429a-ba31-bb821ddeaea7.jpg","short_id":"co0099","published_date":"1930","creator":"Susie
+        Q","thumbnail":null}},{"id":"14","type":"favorite","attributes":{"user_id":8,"title":"1722
+        Quebec Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475009-950a6646-f773-429a-ba31-bb821ddeaea7.jpg","short_id":"co0099","published_date":"1930","creator":"Susie
+        Q","thumbnail":null}},{"id":"15","type":"favorite","attributes":{"user_id":8,"title":"1722
+        Quebec Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475009-950a6646-f773-429a-ba31-bb821ddeaea7.jpg","short_id":"co0099","published_date":"1930","creator":"Susie
+        Q","thumbnail":null}},{"id":"16","type":"favorite","attributes":{"user_id":8,"title":"1722
+        Quebec Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475009-950a6646-f773-429a-ba31-bb821ddeaea7.jpg","short_id":"co0099","published_date":"1930","creator":"Susie
+        Q","thumbnail":null}},{"id":"17","type":"favorite","attributes":{"user_id":8,"title":"1722
+        Quebec Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475009-950a6646-f773-429a-ba31-bb821ddeaea7.jpg","short_id":"co0099","published_date":"1930","creator":"Susie
+        Q","thumbnail":null}},{"id":"18","type":"favorite","attributes":{"user_id":8,"title":"3.
+        Photographic copy of photograph (ca. 1955, original negative found in Beierle
+        Barn, now on file at New Denver International Airport Office, Stapleton International
+        Ariport, Denver, CO). VIEW OF RESIDENCE AND FARM, LOOKING NORTHEAST. - Beierle
+        Farm, Hudson Road \u0026 96th Avenue, Denver, Denver County, CO","image_full":"https://tile.loc.gov/storage-services/service/pnp/habshaer/co/co0200/co0287/photos/183534pr.jpg","short_id":"co0287","published_date":"1990","creator":"Thallheimer,
+        Arnold","thumbnail":"https://tile.loc.gov/storage-services/service/pnp/habshaer/co/co0200/co0287/photos/183534p_150px.jpg"}},{"id":"19","type":"favorite","attributes":{"user_id":8,"title":"1722
+        Quebec Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475009-950a6646-f773-429a-ba31-bb821ddeaea7.jpg","short_id":"co0099","published_date":"1930","creator":"Susie
+        Q","thumbnail":null}},{"id":"20","type":"favorite","attributes":{"user_id":8,"title":"1722
+        Quebec Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475009-950a6646-f773-429a-ba31-bb821ddeaea7.jpg","short_id":"co0099","published_date":"1930","creator":"Susie
         Q","thumbnail":null}}]}'
-  recorded_at: Thu, 04 Aug 2022 16:04:01 GMT
+  recorded_at: Thu, 04 Aug 2022 17:00:27 GMT
 recorded_with: VCR 6.1.0
