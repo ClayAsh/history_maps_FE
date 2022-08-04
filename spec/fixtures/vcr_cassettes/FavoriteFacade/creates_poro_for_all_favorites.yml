@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v2.3.0
+      - Faraday v2.4.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,36 +21,31 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 02 Aug 2022 14:10:46 GMT
+      - Thu, 04 Aug 2022 16:04:00 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ed251b6e7d3d581fca9f70182227fb6b"
+      - W/"ef305a5b2cdd45fa0ebbf4545350c2d9"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3c8a5a83-e1c8-400f-998e-aa6d1ca5e436
+      - abf3d939-ea96-4000-868c-37f36482687a
       X-Runtime:
-      - '0.003790'
+      - '0.005791'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"favorite","attributes":{"location_id":"pdkey","user_id":3,"title":"1237
-        tamarac denver co","other_titles":"more stuff","pdf":"pdf","photo":"jpg","details":"some
-        details"}},{"id":"2","type":"favorite","attributes":{"location_id":"pdkey","user_id":3,"title":"123
-        main st denver co","other_titles":"1925","pdf":"nil","photo":"jpg","details":"nil"}},{"id":"3","type":"favorite","attributes":{"location_id":"pk
-        id","user_id":3,"title":"1623 Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
-        details"}},{"id":"4","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
-        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
-        details"}},{"id":"5","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
-        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
-        details"}},{"id":"6","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
-        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg.url","details":"some
-        details"}}]}'
-  recorded_at: Tue, 02 Aug 2022 14:10:46 GMT
+      string: '{"data":[{"id":"1","type":"favorite","attributes":{"user_id":3,"title":"1800
+        Main Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475036-a3cc07fc-a5a9-4dbc-a523-990fb06e0cd1.jpg","short_id":"co0099","published_date":"1929","creator":"Hank
+        Williams","thumbnail":null}},{"id":"3","type":"favorite","attributes":{"user_id":3,"title":"1722
+        Quebec Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475009-950a6646-f773-429a-ba31-bb821ddeaea7.jpg","short_id":"co0099","published_date":"1930","creator":"Susie
+        Q","thumbnail":null}},{"id":"6","type":"favorite","attributes":{"user_id":3,"title":"1800
+        Main Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475036-a3cc07fc-a5a9-4dbc-a523-990fb06e0cd1.jpg","short_id":"co0099","published_date":"1929","creator":"Hank
+        Williams","thumbnail":null}}]}'
+  recorded_at: Thu, 04 Aug 2022 16:04:00 GMT
 recorded_with: VCR 6.1.0

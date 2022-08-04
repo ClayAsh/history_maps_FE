@@ -5,8 +5,8 @@ http_interactions:
     uri: https://history-maps-be.herokuapp.com/api/v1/users/3/favorites
     body:
       encoding: UTF-8
-      string: '{"user_id":3,"title":"1623 Market Street Denver CO","photo":"jpeg.url","location_id":"pk
-        id","other_titles":null,"details":"some details","pdf":null}'
+      string: '{"user_id":3,"title":"1800 Main Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475036-a3cc07fc-a5a9-4dbc-a523-990fb06e0cd1.jpg","creator":"Hank
+        Williams","thumbnail":null,"short_id":"co0099","published_date":"1929"}'
     headers:
       User-Agent:
       - Faraday v2.4.0
@@ -24,27 +24,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 02 Aug 2022 20:49:26 GMT
+      - Thu, 04 Aug 2022 16:03:59 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ab1aae3fb06190a220a546255917a7c7"
+      - W/"073618bc0eea9927bd93c87fc28e064d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a190ea7e-dbcd-4add-96ac-56106e7ee381
+      - b29631a3-4161-461e-add5-d9cb58145fba
       X-Runtime:
-      - '0.009301'
+      - '0.010502'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"16","type":"favorite","attributes":{"location_id":"pk
-        id","user_id":3,"title":"1623 Market Street Denver CO","other_titles":null,"pdf":null,"photo":"jpeg.url","details":"some
-        details"}}}'
-  recorded_at: Tue, 02 Aug 2022 20:49:26 GMT
+      string: '{"data":{"id":"6","type":"favorite","attributes":{"user_id":3,"title":"1800
+        Main Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475036-a3cc07fc-a5a9-4dbc-a523-990fb06e0cd1.jpg","short_id":"co0099","published_date":"1929","creator":"Hank
+        Williams","thumbnail":null}}}'
+  recorded_at: Thu, 04 Aug 2022 16:03:59 GMT
 recorded_with: VCR 6.1.0

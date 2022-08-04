@@ -9,11 +9,11 @@ class FavoriteService < BaseService
     response = conn.post("/api/v1/users/#{user_id}/favorites", {
       user_id: data[:user_id],
       title: data[:title],
-      photo: data[:photo],
-      location_id: data[:location_id],
-      other_titles: data[:other_titles],
-      details: data[:details],
-      pdf: data[:pdf]
+      image_full: data[:image_full],
+      creator: data[:creator],
+      thumbnail: data[:thumbnail],
+      short_id: data[:short_id],
+      published_date: data[:published_date]
     }.to_json, "Content-Type" => "application/json")
     get_json(response)
   end

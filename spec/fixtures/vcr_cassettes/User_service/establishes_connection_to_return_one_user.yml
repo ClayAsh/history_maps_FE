@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v2.3.0
+      - Faraday v2.4.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,26 +21,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 03 Aug 2022 21:49:53 GMT
+      - Thu, 04 Aug 2022 16:04:04 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ef278edfc43684774f523ff588402023"
+      - W/"8da88f662b3f5bd00d2391764415e4e6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 62b72feb-3920-467e-ad15-4b1d703caecc
+      - 7c70a78b-9cd2-49fc-b70e-dfd43bcbfbd2
       X-Runtime:
-      - '0.006603'
+      - '0.003837'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"3","type":"user","attributes":{"email":"smallgirly111@gmail.com11","username":"small
-        girl11"}}}'
-  recorded_at: Wed, 03 Aug 2022 21:49:52 GMT
+      string: '{"data":{"id":"3","type":"user","attributes":{"email":"email_2@email.com","username":"LukePascale"}}}'
+  recorded_at: Thu, 04 Aug 2022 16:04:05 GMT
 recorded_with: VCR 6.1.0

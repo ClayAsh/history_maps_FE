@@ -50,3 +50,49 @@ a {
 h1 {
   text-align: center;
 }
+
+/* .column {
+  float: left;
+  max-width: 33.33%;
+  padding: 20px;
+}  */
+
+/* .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+} */
+
+/* .responsive {
+  max-width: 100%;
+  height: auto;
+} */ 
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+}
+
+/* div.gallery:hover {
+  padding: 5px;
+  border: 1px solid #777;
+} */
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 30px;
+  text-align: center;
+}
+
+.center-horiz {
+  /* display: block; */
+  margin: auto;
+  /* margin-right: auto; */
+  width: 50%;
+}
+

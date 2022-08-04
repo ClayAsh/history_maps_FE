@@ -8,7 +8,7 @@ http_interactions:
       string: '{"email":"john.doe@example.com","username":"John Doe"}'
     headers:
       User-Agent:
-      - Faraday v2.3.0
+      - Faraday v2.4.0
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -23,26 +23,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 02 Aug 2022 14:10:47 GMT
+      - Thu, 04 Aug 2022 16:04:02 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ab2589cd1611667ac91a0bb1c7c8a8b4"
+      - W/"6ea152147f67a5d6ce7e44f55bf874ff"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d40395c4-8f76-4ecf-ba67-a33316698b28
+      - c1dcf206-6805-49c9-93fa-901003f70415
       X-Runtime:
-      - '0.003072'
+      - '0.004742'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5","type":"user","attributes":{"email":"john.doe@example.com","username":"John
+      string: '{"data":{"id":"8","type":"user","attributes":{"email":"john.doe@example.com","username":"John
         Doe"}}}'
-  recorded_at: Tue, 02 Aug 2022 14:10:47 GMT
+  recorded_at: Thu, 04 Aug 2022 16:04:02 GMT
 recorded_with: VCR 6.1.0

@@ -2,11 +2,11 @@
 http_interactions:
 - request:
     method: post
-    uri: https://history-maps-be.herokuapp.com/api/v1/users/5/favorites
+    uri: https://history-maps-be.herokuapp.com/api/v1/users/8/favorites
     body:
       encoding: UTF-8
-      string: '{"user_id":5,"title":"1623 Market Street Denver CO","photo":"https://user-images.githubusercontent.com/99059063/182475001-5b42845f-6b32-4038-8d1b-8a75b919a470.jpg","location_id":"pk
-        id","other_titles":"1225","details":"some details","pdf":"https://tile.loc.gov/storage-services/master/pnp/habshaer/co/co0900/co0994/data/co0994data.pdf"}'
+      string: '{"user_id":8,"title":"1722 Quebec Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475009-950a6646-f773-429a-ba31-bb821ddeaea7.jpg","creator":"Susie
+        Q","thumbnail":null,"short_id":"co0099","published_date":"1930"}'
     headers:
       User-Agent:
       - Faraday v2.4.0
@@ -24,29 +24,29 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 02 Aug 2022 23:12:39 GMT
+      - Thu, 04 Aug 2022 16:04:00 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"cbbddb17cc10197c3c4bcc10963b493a"
+      - W/"1bf6702c96b31bc1de8b333352bacae6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6bee89b0-4467-407c-a17c-3b99bb7b7dda
+      - 518234e8-071c-403a-bc85-f6d85c8edfbc
       X-Runtime:
-      - '0.010336'
+      - '0.013694'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"22","type":"favorite","attributes":{"location_id":"pk
-        id","user_id":5,"title":"1623 Market Street Denver CO","other_titles":"1225","pdf":"https://tile.loc.gov/storage-services/master/pnp/habshaer/co/co0900/co0994/data/co0994data.pdf","photo":"https://user-images.githubusercontent.com/99059063/182475001-5b42845f-6b32-4038-8d1b-8a75b919a470.jpg","details":"some
-        details"}}}'
-  recorded_at: Tue, 02 Aug 2022 23:12:39 GMT
+      string: '{"data":{"id":"7","type":"favorite","attributes":{"user_id":8,"title":"1722
+        Quebec Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475009-950a6646-f773-429a-ba31-bb821ddeaea7.jpg","short_id":"co0099","published_date":"1930","creator":"Susie
+        Q","thumbnail":null}}}'
+  recorded_at: Thu, 04 Aug 2022 16:04:01 GMT
 - request:
     method: post
     uri: https://history-maps-be.herokuapp.com/api/v1/users/register
@@ -70,31 +70,31 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 02 Aug 2022 23:12:40 GMT
+      - Thu, 04 Aug 2022 16:04:01 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ab2589cd1611667ac91a0bb1c7c8a8b4"
+      - W/"6ea152147f67a5d6ce7e44f55bf874ff"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f4833b4d-f189-424b-9cb0-c480ee92b926
+      - e67d8657-7591-44c2-be46-09825aa00114
       X-Runtime:
-      - '0.018210'
+      - '0.004411'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5","type":"user","attributes":{"email":"john.doe@example.com","username":"John
+      string: '{"data":{"id":"8","type":"user","attributes":{"email":"john.doe@example.com","username":"John
         Doe"}}}'
-  recorded_at: Tue, 02 Aug 2022 23:12:40 GMT
+  recorded_at: Thu, 04 Aug 2022 16:04:01 GMT
 - request:
     method: get
-    uri: https://history-maps-be.herokuapp.com/api/v1/users/5/favorites
+    uri: https://history-maps-be.herokuapp.com/api/v1/users/8/favorites
     body:
       encoding: US-ASCII
       string: ''
@@ -113,68 +113,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 02 Aug 2022 23:12:40 GMT
+      - Thu, 04 Aug 2022 16:04:01 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"20fdd080268a3154de7ee03d820aa8ac"
+      - W/"15e1f38c98fd9939f08bf7ea180cc23e"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2e400df3-345a-4801-af87-44644bae232b
+      - f5cf6e83-31e9-44a0-aeda-b48541c4d9ce
       X-Runtime:
-      - '0.008600'
+      - '0.004770'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"favorite","attributes":{"location_id":"pdkey","user_id":3,"title":"1237
-        tamarac denver co","other_titles":"more stuff","pdf":"pdf","photo":"jpg","details":"some
-        details"}},{"id":"2","type":"favorite","attributes":{"location_id":"pdkey","user_id":3,"title":"123
-        main st denver co","other_titles":"1925","pdf":"nil","photo":"jpg","details":"nil"}},{"id":"3","type":"favorite","attributes":{"location_id":"pk
-        id","user_id":3,"title":"1623 Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
-        details"}},{"id":"4","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
-        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
-        details"}},{"id":"5","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
-        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
-        details"}},{"id":"6","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
-        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg.url","details":"some
-        details"}},{"id":"7","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
-        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg.url","details":"some
-        details"}},{"id":"8","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
-        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
-        details"}},{"id":"9","type":"favorite","attributes":{"location_id":"pk id","user_id":1,"title":"1623
-        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
-        details"}},{"id":"10","type":"favorite","attributes":{"location_id":"pk id","user_id":5,"title":"1623
-        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg.url","details":"some
-        details"}},{"id":"11","type":"favorite","attributes":{"location_id":"pk id","user_id":5,"title":"1623
-        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg.url","details":"some
-        details"}},{"id":"12","type":"favorite","attributes":{"location_id":"pk id","user_id":5,"title":"1623
-        Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg.url","details":"some
-        details"}},{"id":"13","type":"favorite","attributes":{"location_id":"co9897","user_id":3,"title":"\"Test\"","other_titles":"\"More
-        Cool Names\"","pdf":"pdf_path","photo":"photo_path","details":"\"Cool notes
-        about the thing\""}},{"id":"14","type":"favorite","attributes":{"location_id":"Sesame8941","user_id":3,"title":"Yayy
-        Gonzo","other_titles":"The one with the nose","pdf":"get your own pdf","photo":"take
-        one it lasts longer","details":"Hes freakin blue man"}},{"id":"15","type":"favorite","attributes":{"location_id":"pk
-        id","user_id":3,"title":"1623 Market Street Denver CO","other_titles":null,"pdf":null,"photo":"jpeg.url","details":"some
-        details"}},{"id":"16","type":"favorite","attributes":{"location_id":"pk id","user_id":3,"title":"1623
-        Market Street Denver CO","other_titles":null,"pdf":null,"photo":"jpeg.url","details":"some
-        details"}},{"id":"17","type":"favorite","attributes":{"location_id":"pk id","user_id":5,"title":"1623
-        Market Street Denver CO","other_titles":"1225","pdf":"https://tile.loc.gov/storage-services/master/pnp/habshaer/co/co0900/co0994/data/co0994data.pdf","photo":"https://user-images.githubusercontent.com/99059063/182475001-5b42845f-6b32-4038-8d1b-8a75b919a470.jpg","details":"some
-        details"}},{"id":"18","type":"favorite","attributes":{"location_id":"pk id","user_id":5,"title":"1623
-        Market Street Denver CO","other_titles":"1225","pdf":"https://tile.loc.gov/storage-services/master/pnp/habshaer/co/co0900/co0994/data/co0994data.pdf","photo":"https://user-images.githubusercontent.com/99059063/182475001-5b42845f-6b32-4038-8d1b-8a75b919a470.jpg","details":"some
-        details"}},{"id":"19","type":"favorite","attributes":{"location_id":"pk id","user_id":10,"title":"1623
-        Market Street Denver CO","other_titles":"1225","pdf":"https://tile.loc.gov/storage-services/master/pnp/habshaer/co/co0900/co0994/data/co0994data.pdf","photo":"https://user-images.githubusercontent.com/99059063/182475001-5b42845f-6b32-4038-8d1b-8a75b919a470.jpg","details":"some
-        details"}},{"id":"20","type":"favorite","attributes":{"location_id":"pk id","user_id":5,"title":"1623
-        Market Street Denver CO","other_titles":"1225","pdf":"https://tile.loc.gov/storage-services/master/pnp/habshaer/co/co0900/co0994/data/co0994data.pdf","photo":"https://user-images.githubusercontent.com/99059063/182475001-5b42845f-6b32-4038-8d1b-8a75b919a470.jpg","details":"some
-        details"}},{"id":"21","type":"favorite","attributes":{"location_id":"pk id","user_id":5,"title":"1623
-        Market Street Denver CO","other_titles":"1225","pdf":"https://tile.loc.gov/storage-services/master/pnp/habshaer/co/co0900/co0994/data/co0994data.pdf","photo":"https://user-images.githubusercontent.com/99059063/182475001-5b42845f-6b32-4038-8d1b-8a75b919a470.jpg","details":"some
-        details"}},{"id":"22","type":"favorite","attributes":{"location_id":"pk id","user_id":5,"title":"1623
-        Market Street Denver CO","other_titles":"1225","pdf":"https://tile.loc.gov/storage-services/master/pnp/habshaer/co/co0900/co0994/data/co0994data.pdf","photo":"https://user-images.githubusercontent.com/99059063/182475001-5b42845f-6b32-4038-8d1b-8a75b919a470.jpg","details":"some
-        details"}}]}'
-  recorded_at: Tue, 02 Aug 2022 23:12:40 GMT
+      string: '{"data":[{"id":"7","type":"favorite","attributes":{"user_id":8,"title":"1722
+        Quebec Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475009-950a6646-f773-429a-ba31-bb821ddeaea7.jpg","short_id":"co0099","published_date":"1930","creator":"Susie
+        Q","thumbnail":null}}]}'
+  recorded_at: Thu, 04 Aug 2022 16:04:01 GMT
 recorded_with: VCR 6.1.0

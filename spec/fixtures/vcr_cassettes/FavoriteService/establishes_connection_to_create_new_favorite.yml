@@ -5,11 +5,11 @@ http_interactions:
     uri: https://history-maps-be.herokuapp.com/api/v1/users/3/favorites
     body:
       encoding: UTF-8
-      string: '{"user_id":3,"title":"1623 Market Street Denver CO","photo":"jpeg","location_id":"pk
-        id","other_titles":"1225","details":"some details","pdf":"pdf"}'
+      string: '{"user_id":3,"title":"1722 Quebec Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475009-950a6646-f773-429a-ba31-bb821ddeaea7.jpg","creator":"Susie
+        Q","thumbnail":null,"short_id":"co0099","published_date":"1930"}'
     headers:
       User-Agent:
-      - Faraday v2.3.0
+      - Faraday v2.4.0
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -24,27 +24,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 02 Aug 2022 14:10:50 GMT
+      - Thu, 04 Aug 2022 16:04:03 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"9a43679ad6e78febad92e3bb78124c8a"
+      - W/"e7ca1c655a5319655fd7c7607d3bca3f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - acb8152c-ca95-4e3d-abc7-4c81ad0872d2
+      - 41fc21a8-1863-445d-8798-ec1e0ab1f0fe
       X-Runtime:
-      - '0.007575'
+      - '0.008992'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"8","type":"favorite","attributes":{"location_id":"pk
-        id","user_id":3,"title":"1623 Market Street Denver CO","other_titles":"1225","pdf":"pdf","photo":"jpeg","details":"some
-        details"}}}'
-  recorded_at: Tue, 02 Aug 2022 14:10:50 GMT
+      string: '{"data":{"id":"9","type":"favorite","attributes":{"user_id":3,"title":"1722
+        Quebec Street Denver CO","image_full":"https://user-images.githubusercontent.com/99059063/182475009-950a6646-f773-429a-ba31-bb821ddeaea7.jpg","short_id":"co0099","published_date":"1930","creator":"Susie
+        Q","thumbnail":null}}}'
+  recorded_at: Thu, 04 Aug 2022 16:04:03 GMT
 recorded_with: VCR 6.1.0

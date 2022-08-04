@@ -1,21 +1,22 @@
-  
+<div class="center-horiz">
 <img width="500" alt="History Maps" src="https://user-images.githubusercontent.com/99059063/182459512-81968120-d631-4729-86ab-ca15a892b804.jpeg"></br>
+</div>
 
-
-<%@favorites.each do |f|%>
-  <% if f.user_id == @session_user_id.to_i %>
-    <%=f.title%></br>
-    <% if !f.photo.nil? && f.photo.include?("https") %>
-      <%= image_tag(f.photo) %></br>
-    <%end%>
-    <%if !f.other_titles.nil?%>
-      <%=f.other_titles%></br>
-    <%end%>
-    <%if !f.details.nil?%>
-      <%=f.details%></br>
-    <%end%>
-    <%if !f.pdf.nil?%>
-      <%=link_to "A PDF is Available!", f.pdf %></br>
-    <%end%>
-  <%end%>
+    <div class="center-horiz">
+    <%@favorites.each do |f|%>
+      <div class="gallery">
+        <% if !f.image_full.nil? %>
+          <%= image_tag(f.image_full, size: "300") %></br>
+        <%end%>
+        <div class="desc">
+        <strong><%=f.title%></strong></br>
+        <%if !f.creator.nil?%>
+          <%=f.creator%></br>
+        <%end%>
+        <%if !f.published_date.nil?%>
+          <%=f.published_date%></br>
+        <%end%>
+      </div>
+    </div>
+  </div>
 <%end%>
