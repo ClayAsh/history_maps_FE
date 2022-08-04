@@ -5,7 +5,7 @@ class BuildingsController < ApplicationController
     @properties = PropertyFacade.find_property(@building)
   end
 
-  def show;
+  def show
     @property = PropertyFacade.find_single_location(params[:id])
   end
 end

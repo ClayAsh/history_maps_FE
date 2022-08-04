@@ -27,5 +27,15 @@ RSpec.describe 'index page' do
         # expect(page).to have_button("See This Property")
       end
     end
+
+    it "has working link to show page" do
+      visit '/'
+      fill_in :address, with: @location
+      click_on "See History Near Me"
+      expect(current_path).to eq(buildings_path)
+
+      click_on "3. Photographic copy of photograph (ca. 1955, original negative found in Beierle Barn, now on file at New Denver International Airport Office, Stapleton International Ariport, Denver, CO). VIEW OF RESIDENCE AND FARM, LOOKING NORTHEAST. - Beierle Farm, Hudson Road & 96th Avenue, Denver, Denver County, CO"
+
+    end
   end
 end

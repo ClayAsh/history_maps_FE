@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://history-maps-be.herokuapp.com/api/v1/results/al0027
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.4.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 03 Aug 2022 22:50:53 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"340cdfa98c3004fc4ecd47f606696f3f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9f4b99cb-7bf6-4b19-881c-b5725de71a59
+      X-Runtime:
+      - '0.175960'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"title":"Senator Thomas Sidney Frazier House, County Road 40, Peachburg,
+        Bullock County, AL","other_titles":"Walker-Frazier-Adams House","location_id":"al0027","lat":"","long":"","details":[{"note":"HABS
+        AL-538","label":"Survey number"}],"resource_links":["//cdn.loc.gov/master/pnp/habshaer/al/al0000/al0027/data/al0027data.pdf","//www.loc.gov:8081/pictures/search/?q=Photograph:
+        al0027\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true"],"direct_link":"https://www.loc.gov/pictures/item/al0027/","service_medium":"//cdn.loc.gov/service/pnp/habshaer/al/al0000/al0027/photos/006645pr.jpg?q=al0027.photos.006645p\u0026c=5\u0026st=gallery","service_low":"//cdn.loc.gov/service/pnp/habshaer/al/al0000/al0027/photos/006645p_150px.jpg?q=al0027.photos.006645p\u0026c=5\u0026st=gallery","photo_url":"//www.loc.gov:8081/pictures/search/?q=Photograph:
+        al0027\u0026fi=number\u0026op=PHRASE\u0026va=exact\u0026co =hh\u0026st=gallery\u0026sg
+        = true","photo_medium":null,"photo_large":null,"photo_small":"//cdn.loc.gov/service/pnp/habshaer/al/al0000/al0027/photos/006645p_150px.jpg"}'
+  recorded_at: Wed, 03 Aug 2022 22:50:54 GMT
+recorded_with: VCR 6.1.0
