@@ -15,7 +15,7 @@
       </ul>
     </li>
     <li>
-      <a href="#how-to-use-history-maps">How to Use History Maps API</a>
+      <a href="#how-to-use-history-maps">How to Use History Maps</a>
       <ul>
         <li><a href="#repo-and-heroku-sites">Repo and Heroku Sites</a></li>
       </ul>
@@ -28,11 +28,13 @@
 ### About our Project
 ---
 
-History Maps is a microservice application built with the history-curious in mind! It was built in two weeks by a team of six. 
-
-Our front end utilizes eight endpoints built by our back end team, consuming the Library of Congress and Mapquest API to find historical photographs near an address that is entered by a user. 
-
-We have many great thoughts for our project, but if you would like to contribute, feel free to reach out to any of the contributors on GitHub! Find our contact information below!!
+Our goal is to inspire curiosity about local history and provide an educational resource to enrich our relationships with the communities we live in. Whether you are history-curious, a fan of architecture, vintage photography, or just feeling sentimental, History Maps has thousands of local photographs to help you explore the past.
+ 
+Built in two weeks by a team of six, our front end utilizes eight endpoints built by our back end team, consuming the Library of Congress and Mapquest API to find historical photographs near an address that is entered by a user. Utilizing Google Oauth for enhanced security, our application is easily accessible and intuitive to navigate. 
+ 
+In the future we would like to offer a map function where users can get directions to the historical landmark of their choosing, further enhancing the educational community engagement we hope to foster.
+ 
+If you would like to contribute, feel free to reach out to any of the contributors on GitHub! Find our contact information below!!
 
 <br>
 
@@ -56,7 +58,16 @@ To access all of History Map's features, navigate to our home page at https://fi
 
 For extra fun, visit the historical building in the photograph! Happy history hunting! 
 
+If you would like to explore the History Maps repo further:
+* Fork and Clone
+* Run 'bundle install' 
+* Run 'bundle exec figaro install' to create an application.yml file 
+* If you would like to expiriment with the Google Oauth environment, apply for a Google Client ID & Google Client Secret and explore documentation at https://developers.google.com/identity/protocols/oauth2 
+* Put the Google Client ID & Google Client Secret in your application.yml file 
+* To run our RSpec testing suite, run 'bundle exec rspec' from the command line
 
+![Screen Shot 2022-08-05 at 8 14 35 AM](https://user-images.githubusercontent.com/99059063/183096301-0c5a7c97-62ea-434f-9a85-8e1d5843e957.png)
+![Screen Shot 2022-08-05 at 8 17 03 AM](https://user-images.githubusercontent.com/99059063/183096316-229963ae-2232-4014-9f8c-d4b1a473bdd3.png)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Repo and Heroku Sites
