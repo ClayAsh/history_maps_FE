@@ -32,7 +32,7 @@ RSpec.describe 'favorites index page' do
 
     click_link "Register/Sign In"
 
-    fill_in "Address", with: "80223"
+    fill_in :address, with: "80223"
     click_on "See History Near Me"
 
     within("##{0}") do
