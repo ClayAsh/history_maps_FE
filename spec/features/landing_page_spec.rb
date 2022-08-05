@@ -19,12 +19,4 @@ RSpec.describe "Landing page" do
 
     expect(page).to have_link("Register/Sign In")
   end
-
-  it "has link to maps" do
-    visit '/'
-
-    expect(page).to have_link("Map Of Landmarks Near Me")
-  end
-
-
 end
