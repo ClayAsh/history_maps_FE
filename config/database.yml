@@ -83,3 +83,4 @@ production:
   database: history_maps_FE_production
   username: history_maps_FE
   password: <%= ENV['HISTORY_MAPS_FE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
